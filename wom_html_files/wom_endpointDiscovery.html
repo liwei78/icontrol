@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/wom/endpointDiscovery</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/wom/endpointDiscovery</h1>
+<p>Configure automatic discovery of remote endpoints</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/wom/endpointDiscovery</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/wom/endpointDiscovery/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>autoSave</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether the system automatically saves remote endpoints that it discovers.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>discoverable</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether the WAN Optimization Manager responds to probe messages it receives from WAN Optimization Managers on remote BIG-IP systems.</td></tr>
+<tr><td><code>discoveredEndpoint</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether the WAN Optimization Manager sends out probe messages to discover other WAN Optimization Managers on remote BIG-IP systems in the network.</td></tr>
+<tr><td><code>icmpMaxRequests</code></td><td>integer</td><td>1024</td><td>optional</td><td>read/write</td><td>Specifies the maximum number of ICMP probe message requests, after which the system stops sending probe message requests until at least one message is cleared from the queue by either a timeout or a response.</td></tr>
+<tr><td><code>icmpMinBackoff</code></td><td>integer</td><td>5</td><td>optional</td><td>read/write</td><td>Specifies the maximum number of seconds to wait before abandoning an ICMP probe message request and resending it.</td></tr>
+<tr><td><code>icmpNumRetries</code></td><td>integer</td><td>10</td><td>optional</td><td>read/write</td><td>Specifies the maximum number of times the system sends an ICMP probe message request for a single flow.</td></tr>
+<tr><td><code>maxEndpointCount</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the highest number of endpoints for the system to discover before it stops sending probe messages.</td></tr>
+<tr><td><code>mode</code></td><td>string</td><td>enable-all</td><td>optional</td><td>read/write</td><td>Specifies the type of probe messages the system should send.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

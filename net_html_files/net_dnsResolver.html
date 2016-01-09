@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/dnsResolver</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/dnsResolver</h1>
+<p>DNS Resolver object.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net/dnsResolver</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/dnsResolver/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>answerDefaultZones</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>Specifies whether we answer queries for default zones: localhost, reverse 127.0.0.1 and ::1, and AS112 zones. The default value is no.</td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>cacheSize</code></td><td>integer</td><td>5767168</td><td>optional</td><td>read/write</td><td>Specifies number of bytes allocated for caching. The default value is 5.5mb.</td></tr>
+<tr><td><code>idx</code></td><td>uint64</td><td>0</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the DNS Resolver resides.</td></tr>
+<tr><td><code>randomizeQueryNameCase</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether the resolver randomizes the case of query names. The default value is yes.</td></tr>
+<tr><td><code>routeDomain</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies route domain used for resolver outbound traffic. The default value is the default route domain.</td></tr>
+<tr><td><code>type</code></td><td>string</td><td>cache-resolver</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>useIpv4</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether the resolver will issue IPv4 queries. The default value is yes.</td></tr>
+<tr><td><code>useIpv6</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether the resolver will issue IPv6 queries. The default value is yes.</td></tr>
+<tr><td><code>useTcp</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether the resolver will issue tcp queries. The default value is yes.</td></tr>
+<tr><td><code>useUdp</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether the resolver will issue udp queries. The default value is yes.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="net_dnsResolver_forwardZones.html">forwardZones</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Manage the set of Forward Zones used by this DNS Resolver</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

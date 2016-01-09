@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/snmp</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/snmp</h1>
+<p>SNMP agent config</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/snmp</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/snmp/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>agentAddresses</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>A list of protocol/address combinations that the agent listens for traffic on.</td></tr>
+<tr><td><code>agentTrap</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Enables or disables traps about the agent status.</td></tr>
+<tr><td><code>allowedAddresses</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configures hosts or networks from which snmpd can accept traffic. Entries go directly into hosts.allow.</td></tr>
+<tr><td><code>authTrap</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Enable or disable generating traps on authentication failures</td></tr>
+<tr><td><code>bigipTraps</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Enables or disables traps about device warnings.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>include</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds information to the snmpd.conf file. Use with extreme caution or under the guidance of F5 support.</td></tr>
+<tr><td><code>l2forwardVlan</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Enables l2forwarding statistics for specified VLANs.</td></tr>
+<tr><td><code>loadMax1</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>One minute load threshold before SNMPd sends a trap.</td></tr>
+<tr><td><code>loadMax15</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Fifteen minute load threshold before SNMPd sends a trap.</td></tr>
+<tr><td><code>loadMax5</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Five minute load threshold before SNMPd sends a trap.</td></tr>
+<tr><td><code>sysContact</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the contact information for the system administrator.</td></tr>
+<tr><td><code>sysLocation</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Describes the system's physical location.</td></tr>
+<tr><td><code>sysServices</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Sets the value of the system.sysServices.0 object.</td></tr>
+<tr><td><code>trapCommunity</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Default community name used when sending traps.</td></tr>
+<tr><td><code>trapSource</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Source used for sending traps.</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="sys_snmp_communities.html">communities</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies SNMP community strings and limits them to specific oid subsets.</td></tr>
+<tr><td><code><a href="sys_snmp_traps.html">traps</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Generic interface for configuring SNMP traps.</td></tr>
+<tr><td><code><a href="sys_snmp_users.html">users</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies user account information for use with SNMPv3.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="sys_snmp_diskMonitors.html">diskMonitors</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies disk locations to monitor and conditions for sending traps.</td></tr>
+<tr><td><code><a href="sys_snmp_processMonitors.html">processMonitors</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies processes to monitor and conditions for sending traps.</td></tr>
+<tr><td><code><a href="sys_snmp_v1Traps.html">v1Traps</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Simple interface for configuring SNMPv1 traps</td></tr>
+<tr><td><code><a href="sys_snmp_v2Traps.html">v2Traps</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Simple interface for configuring SNMPv2 traps</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

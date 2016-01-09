@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/security/dos/deviceConfig/dosDeviceVector</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/security/dos/deviceConfig/dosDeviceVector</h1>
+<p>List of DoS vectors</p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>autoBlacklisting</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables automatic blacklisting of offending IPs</td></tr>
+<tr><td><code>blacklistCategory</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Blacklist category (of IP intelligence) to which this IP should be added.</td></tr>
+<tr><td><code>blacklistDetectionSeconds</code></td><td>integer</td><td>60</td><td>optional</td><td>read/write</td><td>Duration in seconds for which the IP has been offending.</td></tr>
+<tr><td><code>blacklistDuration</code></td><td>integer</td><td>14400</td><td>optional</td><td>read/write</td><td>Duration in seconds for which this IP should be blocked.</td></tr>
+<tr><td><code>defaultInternalRateLimit</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read/write</td><td>Traffic rate limit to BIG-IP (packets per-second)</td></tr>
+<tr><td><code>detectionThresholdPercent</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read/write</td><td>Attack detection threshold (percent increase)</td></tr>
+<tr><td><code>detectionThresholdPps</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read/write</td><td>Attack detection threshold (packets per-second)</td></tr>
+<tr><td><code>packetTypes</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Type of packets that will be classified as Sweep/Flood attack</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/analytics</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/analytics</h1>
+<p>Analytics reports</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/analytics</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/analytics/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="analytics_guiWidget.html">guiWidget</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>GUI widgets in overview pages</td></tr>
+<tr><td><code><a href="analytics_predefinedReport.html">predefinedReport</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Analytics predefined-report generation</td></tr>
+<tr><td><code><a href="analytics_report.html">report</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Analytic report generation</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="analytics_applicationSecurity.html">applicationSecurity</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Application security (ASM) analytics reports</td></tr>
+<tr><td><code><a href="analytics_applicationSecurityAnomalies.html">applicationSecurityAnomalies</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Application security (ASM) anomalies analytics reports</td></tr>
+<tr><td><code><a href="analytics_applicationSecurityNetwork.html">applicationSecurityNetwork</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Application security (ASM) network analytics reports</td></tr>
+<tr><td><code><a href="analytics_asmBypass.html">asmBypass</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>ASM bypass information reports</td></tr>
+<tr><td><code><a href="analytics_asmCpu.html">asmCpu</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>ASM CPU usage reports</td></tr>
+<tr><td><code><a href="analytics_asmMemory.html">asmMemory</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>ASM memory usage reports</td></tr>
+<tr><td><code><a href="analytics_cpu.html">cpu</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>CPU Statistics analytics reports</td></tr>
+<tr><td><code><a href="analytics_diskInfo.html">diskInfo</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Disk Statistics analytics reports</td></tr>
+<tr><td><code><a href="analytics_dns.html">dns</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>DNS analytics reports</td></tr>
+<tr><td><code><a href="analytics_dnsDos.html">dnsDos</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>DNS DoS prevention analytics reports</td></tr>
+<tr><td><code><a href="analytics_dnsProtocol.html">dnsProtocol</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>DNS protocol security analytics reports</td></tr>
+<tr><td><code><a href="analytics_dosL3.html">dosL3</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>DoS prevention (network) analytics reports</td></tr>
+<tr><td><code><a href="analytics_dosL7.html">dosL7</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>DoS prevention (application) analytics reports</td></tr>
+<tr><td><code><a href="analytics_http.html">http</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>HTTP analytics reports</td></tr>
+<tr><td><code><a href="analytics_ipIntelligence.html">ipIntelligence</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>IP-Intelligence analytics reports</td></tr>
+<tr><td><code><a href="analytics_ipLayer.html">ipLayer</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>IPv4/IPv6 statistics analytics reports</td></tr>
+<tr><td><code><a href="analytics_lsnPool.html">lsnPool</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>LSN Pool analytics reports</td></tr>
+<tr><td><code><a href="analytics_memory.html">memory</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="analytics_network.html">network</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Network firewall analytics reports</td></tr>
+<tr><td><code><a href="analytics_pem.html">pem</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>PEM analytics reports</td></tr>
+<tr><td><code><a href="analytics_procCpu.html">procCpu</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Process CPU Utilization reports</td></tr>
+<tr><td><code><a href="analytics_protocolSecurity.html">protocolSecurity</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>SMTP/FTP protocol security analytics reports</td></tr>
+<tr><td><code><a href="analytics_protocolSecurityHttp.html">protocolSecurityHttp</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>HTTP protocol security analytics reports</td></tr>
+<tr><td><code><a href="analytics_sip.html">sip</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>SIP analytics reports</td></tr>
+<tr><td><code><a href="analytics_sipDos.html">sipDos</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>SIP DoS prevention analytics reports</td></tr>
+<tr><td><code><a href="analytics_swg.html">swg</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>AFM Secure web gateway analytics reports</td></tr>
+<tr><td><code><a href="analytics_swgBlocked.html">swgBlocked</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>AFM Secure web gateway blocked reports</td></tr>
+<tr><td><code><a href="analytics_tcp.html">tcp</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>TCP Layer statistics analytics reports</td></tr>
+<tr><td><code><a href="analytics_udp.html">udp</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>UDP Layer statistics analytics reports</td></tr>
+<tr><td><code><a href="analytics_vcmp.html">vcmp</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>VCMP Statistics analytics reports</td></tr>
+<tr><td><code><a href="analytics_virtual.html">virtual</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Virtual Server statistics analytics reports</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

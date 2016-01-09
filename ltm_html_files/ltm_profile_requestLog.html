@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/profile/requestLog</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/profile/requestLog</h1>
+<p>Virtual server request logging profile configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/profile/requestLog</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/profile/requestLog/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>logRequestLoggingErrors</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>Enables secondary logging should the primary lack sufficient available bandwidth.  This mechanism is best used to send an alert to a completely separate destination.</td></tr>
+<tr><td><code>logResponseByDefault</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Response logging may be overridden via iRule. This field determines the default response action.</td></tr>
+<tr><td><code>logResponseLoggingErrors</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables secondary logging should the primary lack sufficient available bandwidth.  This mechanism is best used to send an alert to a completely separate destination.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which this profile resides.</td></tr>
+<tr><td><code>proxyCloseOnError</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>If enabled, the logging profile will close the connection after sending its proxy-response.</td></tr>
+<tr><td><code>proxyRespondOnLoggingError</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>Should the logging fail, this feature allows the logging profile to respond directly, eg with an HTTP 502.</td></tr>
+<tr><td><code>proxyResponse</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The response to send on logging errors.</td></tr>
+<tr><td><code>requestLogErrorPool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Name of the pool from which to select log servers.</td></tr>
+<tr><td><code>requestLogErrorProtocol</code></td><td>string</td><td>mds-udp</td><td>optional</td><td>read/write</td><td>HighSpeedLogging protocol to use when logging.</td></tr>
+<tr><td><code>requestLogErrorTemplate</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The template to use when generating log messages. Shell style escapes (eg $foo and/or ${foo}) are used to import transaction-specific values.</td></tr>
+<tr><td><code>requestLogPool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Name of the pool from which to select log servers.</td></tr>
+<tr><td><code>requestLogProtocol</code></td><td>string</td><td>mds-udp</td><td>optional</td><td>read/write</td><td>HighSpeedLogging protocol to use when logging.</td></tr>
+<tr><td><code>requestLogTemplate</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The template to use when generating log messages. Shell style escapes (eg $foo and/or ${foo}) are used to import transaction-specific values.</td></tr>
+<tr><td><code>requestLogging</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables logging before the request is proxied.</td></tr>
+<tr><td><code>responseLogErrorPool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Name of the pool from which to select log servers.</td></tr>
+<tr><td><code>responseLogErrorProtocol</code></td><td>string</td><td>mds-udp</td><td>optional</td><td>read/write</td><td>HighSpeedLogging protocol to use when logging.</td></tr>
+<tr><td><code>responseLogErrorTemplate</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The template to use when generating log messages. Shell style escapes (eg $foo and/or ${foo}) are used to import transaction-specific values.</td></tr>
+<tr><td><code>responseLogPool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Name of the pool from which to select log servers.</td></tr>
+<tr><td><code>responseLogProtocol</code></td><td>string</td><td>mds-udp</td><td>optional</td><td>read/write</td><td>HighSpeedLogging protocol to use when logging.</td></tr>
+<tr><td><code>responseLogTemplate</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The template to use when generating log messages. Shell style escapes (eg $foo and/or ${foo}) are used to import transaction-specific values.</td></tr>
+<tr><td><code>responseLogging</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables logging before the response is returned to the client.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

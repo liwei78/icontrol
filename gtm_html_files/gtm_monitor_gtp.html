@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/gtm/monitor/gtp</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/gtm/monitor/gtp</h1>
+<p>GTP monitor configuration.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/gtm/monitor/gtp</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/gtm/monitor/gtp/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the existing monitor from which the system imports settings for the new monitor.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>destination</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the IP address and service port of the resource that is the destination of this monitor. Possible values are:  *:* (Specifies to perform a health check on the IP address and port supplied by a pool member), *:port (Specifies to perform a health check on the server with the IP address supplied by the pool member and the port you specify.),   IP : port  (Specifies to mark a pool member up or down based on the response of the server at the IP address and port you specify).</td></tr>
+<tr><td><code>ignoreDownResponse</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies whether the monitor ignores a down response from the system it is monitoring. The default value is disabled.</td></tr>
+<tr><td><code>interval</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the frequency at which the system issues the monitor check. The default value is 30 seconds.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the monitor resides.</td></tr>
+<tr><td><code>probeAttempts</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the number of times the BIG-IP system attempts to probe the host server, after which the BIG-IP system considers the host server down or unavailable. The default value is 3 attempts.</td></tr>
+<tr><td><code>probeInterval</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the frequency at which the BIG-IP system probes the host server. The default value is 1 second.</td></tr>
+<tr><td><code>probeTimeout</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the number of seconds after which the BIG-IP system times out the probe request to the BIG-IP system. The default value is 5 seconds.</td></tr>
+<tr><td><code>protocolVersion</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the GTP protocol version to use on the wire. GTP version 1 and version 2 are supported.</td></tr>
+<tr><td><code>timeout</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the number of seconds the target has in which to respond to the monitor request. The default value is 120 seconds. If the target responds within the set time period, it is considered up. If the target does not respond within the set time period, it is considered down.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

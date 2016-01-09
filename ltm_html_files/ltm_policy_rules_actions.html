@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/policy/rules/actions</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/policy/rules/actions</h1>
+<p></p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/policy/rules/actions</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/policy/rules/actions/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>application</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use the following application.</td></tr>
+<tr><td><code>asm</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will use an ASM policy.</td></tr>
+<tr><td><code>avr</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will use AVR</td></tr>
+<tr><td><code>cache</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will affect caching.</td></tr>
+<tr><td><code>carp</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>category</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will apply to the following category.</td></tr>
+<tr><td><code>classify</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will classify a stream.</td></tr>
+<tr><td><code>clonePool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will clone the stream and send it to this pool.</td></tr>
+<tr><td><code>code</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>This action has the following code.</td></tr>
+<tr><td><code>compress</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will affect compression.</td></tr>
+<tr><td><code>content</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will insert/replace content.</td></tr>
+<tr><td><code>cookieHash</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>cookieInsert</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>cookiePassive</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>cookieRewrite</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>decompress</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will affect decompression.</td></tr>
+<tr><td><code>defer</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will defer an action.</td></tr>
+<tr><td><code>destinationAddress</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>disable</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will disable a profile.</td></tr>
+<tr><td><code>domain</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will act on the domain.</td></tr>
+<tr><td><code>enable</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will enable a profile.</td></tr>
+<tr><td><code>expiry</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will have the following expiry.</td></tr>
+<tr><td><code>expirySecs</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>expression</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will evaluate this expression.</td></tr>
+<tr><td><code>extension</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use the specified extension.</td></tr>
+<tr><td><code>facility</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>forward</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will affect forwarding.</td></tr>
+<tr><td><code>fromProfile</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will come from a profile.</td></tr>
+<tr><td><code>hash</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>host</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will affect the host.</td></tr>
+<tr><td><code>http</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will act on HTTP streams.</td></tr>
+<tr><td><code>httpBasicAuth</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This policy action is performed on basic http authentication.</td></tr>
+<tr><td><code>httpCookie</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will on a given HTTP cookie.</td></tr>
+<tr><td><code>httpHeader</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will act on a given HTTP header.</td></tr>
+<tr><td><code>httpHost</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will act on a given HTTP host.</td></tr>
+<tr><td><code>httpReferer</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will act on a given HTTP referer.</td></tr>
+<tr><td><code>httpReply</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will affect a reply to a given HTTP request.</td></tr>
+<tr><td><code>httpSetCookie</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will set an HTTP cookie.</td></tr>
+<tr><td><code>httpUri</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will act on given HTTP URIs.</td></tr>
+<tr><td><code>ifile</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use the given iFile.</td></tr>
+<tr><td><code>insert</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will insert a value.</td></tr>
+<tr><td><code>internalVirtual</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use following internal virtual.</td></tr>
+<tr><td><code>ipAddress</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>key</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>l7dos</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will use a layer 7 DOS policy.</td></tr>
+<tr><td><code>length</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>location</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will come from the given location.</td></tr>
+<tr><td><code>log</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will log a value.</td></tr>
+<tr><td><code>ltmPolicy</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>member</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will direct the stream to this member.</td></tr>
+<tr><td><code>message</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will create this message.</td></tr>
+<tr><td><code>tmName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This name of a value used in an action.</td></tr>
+<tr><td><code>netmask</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specify an IPv4/IPv6 netmask, e.g. 192.168.10.0/24 or 192.168.10.0/255.255.255.0</td></tr>
+<tr><td><code>nexthop</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will apply this next hop policy.</td></tr>
+<tr><td><code>node</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will direct the stream to this node.</td></tr>
+<tr><td><code>offset</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specify offset parameter</td></tr>
+<tr><td><code>path</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use the following path.</td></tr>
+<tr><td><code>pem</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will affect PEM.</td></tr>
+<tr><td><code>persist</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>pin</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will affect a pin.</td></tr>
+<tr><td><code>policy</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use this policy.</td></tr>
+<tr><td><code>pool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will direct the stream to this pool.</td></tr>
+<tr><td><code>port</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>This action will act on the following port.</td></tr>
+<tr><td><code>priority</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>profile</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use the specified profile.</td></tr>
+<tr><td><code>protocol</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use the following protocol.</td></tr>
+<tr><td><code>queryString</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will modify the query string of a URL.</td></tr>
+<tr><td><code>rateclass</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will apply this rate class policy.</td></tr>
+<tr><td><code>redirect</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will redirect a request.</td></tr>
+<tr><td><code>remove</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will remove a value.</td></tr>
+<tr><td><code>replace</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will replace a value.</td></tr>
+<tr><td><code>request</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td>This policy action is performed on connection requests.</td></tr>
+<tr><td><code>requestAdapt</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will modify request adaptation.</td></tr>
+<tr><td><code>reset</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will reset a connection.</td></tr>
+<tr><td><code>response</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td>This policy action is performed on connection responses.</td></tr>
+<tr><td><code>responseAdapt</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will modify response adaptation.</td></tr>
+<tr><td><code>scheme</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use the specified scheme.</td></tr>
+<tr><td><code>script</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will run this script.</td></tr>
+<tr><td><code>select</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will select an option.</td></tr>
+<tr><td><code>serverSsl</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will modify server-side SSL behavior.</td></tr>
+<tr><td><code>setVariable</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will set a variable.</td></tr>
+<tr><td><code>snat</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use this snat rule.</td></tr>
+<tr><td><code>snatpool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use this snatpool.</td></tr>
+<tr><td><code>sourceAddress</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>sslClientHello</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>sslServerHandshake</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>sslServerHello</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>sslSessionId</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>status</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>This action will set a status.</td></tr>
+<tr><td><code>tcl</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will invoke a tcl script.</td></tr>
+<tr><td><code>tcpNagle</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will enable or disable tcp nagle.</td></tr>
+<tr><td><code>text</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This specifies a text value.</td></tr>
+<tr><td><code>timeout</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Timeout value in seconds</td></tr>
+<tr><td><code>uie</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>universal</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>value</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use the following value.</td></tr>
+<tr><td><code>virtual</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will use this virtual server.</td></tr>
+<tr><td><code>vlan</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>This action will affect this vlan.</td></tr>
+<tr><td><code>vlanId</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>This action will affect the vlan with this id.</td></tr>
+<tr><td><code>wam</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will use an AM policy.</td></tr>
+<tr><td><code>write</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This action will write a value.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/software/volume</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/software/volume</h1>
+<p>Manage software volumes, or reboot to a specific volume</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/software/volume</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/software/volume/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, DELETE</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>active</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Set if this volume is being run.</td></tr>
+<tr><td><code>basebuild</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The original build number (before any hotfixes)</td></tr>
+<tr><td><code>build</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The build number of the hotfix presently applied or the original build</td></tr>
+<tr><td><code>edition</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>A textual description of the image, used to specify which hotfix is installed</td></tr>
+<tr><td><code>product</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The F5 product that is installed on this volume</td></tr>
+<tr><td><code>status</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The installation status of this volume (complete, installing, etc)</td></tr>
+<tr><td><code>version</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The version of the software installed on this volume</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="sys_software_volume_media.html">media</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

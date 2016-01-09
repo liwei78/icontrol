@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/gtm</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/gtm</h1>
+<p>Global Traffic Manager</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/gtm</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/gtm/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="gtm_big3d_install.html">big3d_install</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Install the current version of big3d on a remote BIG-IP</td></tr>
+<tr><td><code><a href="gtm_bigip_add.html">bigip_add</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Exchange iQuery SSL certs with a remote BIG-IP</td></tr>
+<tr><td><code><a href="gtm_datacenter.html">datacenter</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Data center configuration</td></tr>
+<tr><td><code><a href="gtm_distributedApp.html">distributedApp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Distributed application configuration</td></tr>
+<tr><td><code><a href="gtm_gtm_add.html">gtm_add</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Add a BIG-IP GTM into a running sync group</td></tr>
+<tr><td><code><a href="gtm_gtm_appliance_add.html">gtm_appliance_add</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="gtm_iquery.html">iquery</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>IQuery statistics</td></tr>
+<tr><td><code><a href="gtm_ldns.html">ldns</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>LDNS statistics</td></tr>
+<tr><td><code><a href="gtm_link.html">link</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Link configuration</td></tr>
+<tr><td><code><a href="gtm_listener.html">listener</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Listeners accept DNS queries sent to a particular address.</td></tr>
+<tr><td><code><a href="gtm_path.html">path</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Path statistics</td></tr>
+<tr><td><code><a href="gtm_persist.html">persist</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Displays the total number of persistence objects on the system.</td></tr>
+<tr><td><code><a href="gtm_proberPool.html">proberPool</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Prober Pool configuration</td></tr>
+<tr><td><code><a href="gtm_region.html">region</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Region configuration</td></tr>
+<tr><td><code><a href="gtm_rule.html">rule</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>GTM iRule configuration</td></tr>
+<tr><td><code><a href="gtm_server.html">server</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>GTM server configuration</td></tr>
+<tr><td><code><a href="gtm_topology.html">topology</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Topology configuration</td></tr>
+<tr><td><code><a href="gtm_traffic.html">traffic</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Global GTM statistics</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="gtm_globalSettings.html">globalSettings</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Global Traffic Manager options</td></tr>
+<tr><td><code><a href="gtm_monitor.html">monitor</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>GTM monitor templates</td></tr>
+<tr><td><code><a href="gtm_pool.html">pool</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>GTM Load Balancing Pools. Type 'help pool' to see valid pool query types, and 'help pool [query type]' for more information on a specific type of pool.</td></tr>
+<tr><td><code><a href="gtm_wideip.html">wideip</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>GTM Wide IPs. Type 'help wideip' to see valid Wide IP query types, and 'help wideip [query type]' for more information on a specific type of Wide IP.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

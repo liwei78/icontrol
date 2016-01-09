@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/trunk</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/trunk</h1>
+<p>Trunk configuration and statistics</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net/trunk</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/trunk/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>bandwidth</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the operational bandwidth in Mobs.</td></tr>
+<tr><td><code>cfgMbrCount</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the number of configured members.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>distributionHash</code></td><td>string</td><td>src-dst-ipport</td><td>optional</td><td>read/write</td><td>Specifies the basis for the hash that the system uses as the frame distribution algorithm. The system uses the resulting hash to determine which interface to use for forwarding traffic.</td></tr>
+<tr><td><code>id</code></td><td>integer</td><td>65535</td><td>optional</td><td>read/write</td><td>Displays the ID of the trunk.</td></tr>
+<tr><td><code>lacp</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system supports the link aggregation control protocol (LACP), which monitors the trunk by exchanging control packets over the member links to determine the health of the links. If LACP detects a failure in a member link, it removes the link from the link aggregation. LACP is disabled by default, for backward compatibility.</td></tr>
+<tr><td><code>lacpMode</code></td><td>string</td><td>active</td><td>optional</td><td>read/write</td><td>Specifies the operation mode for link aggregation control protocol (LACP), if LACP is enabled for the trunk.</td></tr>
+<tr><td><code>lacpTimeout</code></td><td>string</td><td>long</td><td>optional</td><td>read/write</td><td>Specifies the rate at which the system sends the LACP control packets.</td></tr>
+<tr><td><code>linkSelectPolicy</code></td><td>string</td><td>auto</td><td>optional</td><td>read/write</td><td>Sets the LACP policy that the trunk uses to determine which member link (interface) can handle new traffic. Note that link aggregation is allowed only when all the interfaces are operating at the same media speed and connected to the same partner aggregation system. When there is a mismatch among configured members due to configuration errors or topology changes (auto-negotiation), link selection policy determines which links become working members and form the aggregation.</td></tr>
+<tr><td><code>macAddress</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the media access control (MAC) address, which is associated with the trunk, in case-insensitive hexadecimal colon notation, for example, 00:0b:09:88:00:9a.</td></tr>
+<tr><td><code>media</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td>Displays the media settings for the trunk.</td></tr>
+<tr><td><code>qinqEthertype</code></td><td>string</td><td>0x8100</td><td>optional</td><td>read/write</td><td>Specifies the protocol identifier associated with the tagged mode of the trunk.</td></tr>
+<tr><td><code>stp</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables STP. If you disable STP, the system does not transmit or receive STP, RSTP, or MSTP packets on the trunk, and STP has no control over forwarding or learning on the trunk. The default value is enabled.</td></tr>
+<tr><td><code>stpReset</code></td><td>boolean</td><td>false</td><td>optional</td><td>read/write</td><td>Resets STP, which forces a migration check.</td></tr>
+<tr><td><code>type</code></td><td>string</td><td>normal</td><td>optional</td><td>read/write</td><td>Displays whether this trunk is managed by a VCMP hypervisor or not.</td></tr>
+<tr><td><code>workingMbrCount</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the number of working members associated with this trunk.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>interfaces</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the interfaces by name separated by spaces that you want to add to the trunk, delete from the trunk, or with which you want to replace all existing interfaces associated with the trunk.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

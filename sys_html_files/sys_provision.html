@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/provision</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/provision</h1>
+<p>Module resource configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/provision</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/provision/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>cpuRatio</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Use this option only when the level option is set to custom. F5 recommends that you do not modify this option. The default value is zero.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>diskRatio</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Use this option only when the level option is set to custom. F5 recommends that you do not modify this option. The default value is zero.</td></tr>
+<tr><td><code>level</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies the level of resources that you want to provision for a module. "minimum" specifies that you want to provision the minimal amount of resources for the module you are provisioning. "nominal" specifies that you want to share all of the available resources equally among all of the modules that are licensed of the unit. "dedicated" specifies that all resources are dedicated to the module you are provisioning. For all other modules, the level option must be set to none. "none" specifies that you do not want to provision any resources for this module. "custom" F5 does not recommend that you specify this level.</td></tr>
+<tr><td><code>memoryRatio</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Use this option only when the level option is set to custom. F5 recommends that you do not modify this option. The default value is zero.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

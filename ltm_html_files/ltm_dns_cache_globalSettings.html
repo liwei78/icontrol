@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/dns/cache/globalSettings</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/dns/cache/globalSettings</h1>
+<p>DNS Cache global settings affecting all caches.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/dns/cache/globalSettings</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/dns/cache/globalSettings/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>cacheMaximumTtl</code></td><td>integer</td><td>864000</td><td>optional</td><td>read/write</td><td>Force resolver to re-query for resource records at cache-maximum-ttl seconds if its original ttl is greater than cache-maximum-ttl.</td></tr>
+<tr><td><code>cacheMinimumTtl</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Cache resource records for at least cache-minimum-ttl seconds, i.e. longer than owner intended.</td></tr>
+<tr><td><code>resolverEdnsBufferSize</code></td><td>integer</td><td>4096</td><td>optional</td><td>read/write</td><td>Buffer size resolver advertises in udp queries.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/classification/urldbFeedList</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/classification/urldbFeedList</h1>
+<p>Reusable URLDB feed lists for URL Categorization.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/classification/urldbFeedList</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/classification/urldbFeedList/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>defaultUrlCategory</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>URL category to be used for URLs in custom db</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which this profile resides.</td></tr>
+<tr><td><code>password</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>password for the user</td></tr>
+<tr><td><code>pollInterval</code></td><td>string</td><td>300</td><td>optional</td><td>read/write</td><td>Frequency of polling the customdb location URL.  Default is 5 minutes</td></tr>
+<tr><td><code>url</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>customdb location URL name. local file, ftp, http, https are allowed.</td></tr>
+<tr><td><code>user</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>username for customdb url location authentication</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

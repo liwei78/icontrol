@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/security/antiFraud/profile/urls/appLayerEncryption</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/security/antiFraud/profile/urls/appLayerEncryption</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>addDecoyInputs</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system randomly and continuously generates and removes decoy  input  fields that are added to the web page, thus making it harder for an attacker to identify sensitive information with either JavaScript or a proxy.</td></tr>
+<tr><td><code>disabled</code></td><td>boolean</td><td>true</td><td>optional</td><td>read/write</td><td>Specifies that the system does not protect this URL with Application layer encryption, and does not send an alert if an attacker attempts to breach Application layer encryption for this URL.</td></tr>
+<tr><td><code>enabled</code></td><td>boolean</td><td>true</td><td>optional</td><td>read/write</td><td>Specifies that the system protects this URL with Application layer encryption, and sends an alert if an attacker attempts to breach Application layer encryption for this URL.</td></tr>
+<tr><td><code>fakeStrokes</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system protects against in-browser key loggers by generating fake keyboard events.</td></tr>
+<tr><td><code>hidePasswordRevealer</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system hides the password revealer icon found in web pages.</td></tr>
+<tr><td><code>htmlFieldObfuscation</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system encrypts the names of defined  input  fields on the client, and then decrypts them back to the original names on the BIG-IP.</td></tr>
+<tr><td><code>realTimeEncryption</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system encrypts passwords as they are typed (even before the user clicks the Submit button in a web form).</td></tr>
+<tr><td><code>removeElementIds</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system removes the ID attribute from the  input  fields in a web form.</td></tr>
+<tr><td><code>removeEventListeners</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system removes event listeners from the encrypted  input  fields in a web form.</td></tr>
+<tr><td><code>stolenCreds</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system examines whether the user was trying to use a fabricated password.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

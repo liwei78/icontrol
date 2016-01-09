@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/pem/serviceChainEndpoint/serviceEndpoints</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/pem/serviceChainEndpoint/serviceEndpoints</h1>
+<p>Defines PEM service point.</p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>fromVlan</code></td><td>string</td><td> </td><td>required</td><td>read/write</td><td>Specifies the VLAN name that is associated with the service-endpoint. The VLAN must be pre-configured before it can be referenced.</td></tr>
+<tr><td><code>order</code></td><td>integer</td><td>0</td><td>required</td><td>read/write</td><td>Specifies the order of the service-endpoint that the traffic will pass through. Note that the actual configuration has to match the order.</td></tr>
+<tr><td><code>serviceOption</code></td><td>string</td><td>optional</td><td>optional</td><td>read/write</td><td>Specifies the behavior of traffic when a service-endpoint is not available. If a service-endpoint is marked mandatory and the service-endpoint is down, the traffic flow will be dropped.</td></tr>
+<tr><td><code>steeringPolicy</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the pem policy that need to be evaluated on the flow</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="pem_serviceChainEndpoint_serviceEndpoints_forwardingEndpoint.html">forwardingEndpoint</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="pem_serviceChainEndpoint_serviceEndpoints_httpAdaptService.html">httpAdaptService</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

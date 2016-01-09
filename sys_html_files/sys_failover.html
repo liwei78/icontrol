@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/failover</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/failover</h1>
+<p>Redundant system failover state</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/failover</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/failover/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>device</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the name of the device that should become the active device for the traffic group or for all traffic groups.</td></tr>
+<tr><td><code>noPersist</code></td><td>boolean</td><td> </td><td>optional</td><td>read</td><td>Does not persist the change in status of a unit or cluster. Valid only with offline status.</td></tr>
+<tr><td><code>offline</code></td><td>boolean</td><td> </td><td>optional</td><td>read</td><td>Changes the status of a unit or cluster to Forced Offline. If persist or no-persist are not specified, the change in status will be persisted in-between system restarts.</td></tr>
+<tr><td><code>online</code></td><td>boolean</td><td> </td><td>optional</td><td>read</td><td>Changes the status of a unit or cluster from Forced Offline to either Active or Standby, depending upon the status of the other unit or cluster in a redundant pair.</td></tr>
+<tr><td><code>persist</code></td><td>boolean</td><td> </td><td>optional</td><td>read</td><td>Persists the change in status of a unit or cluster. Valid only with offline status.</td></tr>
+<tr><td><code>standby</code></td><td>boolean</td><td> </td><td>optional</td><td>read</td><td>Specifies that the active unit or cluster fails over to a Standby state, causing the standby unit or cluster to become Active.</td></tr>
+<tr><td><code>trafficGroup</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the name of the traffic-group that the standby command refers to.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/virtualAddress</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/virtualAddress</h1>
+<p>Virtual server IP address configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/virtualAddress</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/virtualAddress/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>address</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>arp</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables ARP for the specified virtual address. The default value is enabled.</td></tr>
+<tr><td><code>autoDelete</code></td><td>string</td><td>true</td><td>optional</td><td>read/write</td><td>Indicates if the virtual address will be deleted automatically on deletion of the last associated virtual server or not. The default value is true.</td></tr>
+<tr><td><code>connectionLimit</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Sets a concurrent connection limit in seconds for one or more virtual servers. The default value is 0 seconds.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>enabled</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether a virtual server IP address is enabled. The default value is yes.</td></tr>
+<tr><td><code>floating</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>icmpEcho</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables ICMP echo replies for the specified virtual address. The default value is enabled.</td></tr>
+<tr><td><code>inheritedTrafficGroup</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>mask</code></td><td>string</td><td>ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td><td>optional</td><td>read/write</td><td>Sets the netmask or one or more network virtual servers only. This setting is required for network virtual servers.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which this profile resides.</td></tr>
+<tr><td><code>routeAdvertisement</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables route advertisement for the specified virtual address. The default value is disabled.</td></tr>
+<tr><td><code>serverScope</code></td><td>string</td><td>any</td><td>optional</td><td>read/write</td><td>Specifies the server that uses the specified virtual address.</td></tr>
+<tr><td><code>trafficGroup</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the traffic group for the virtual address.  The default traffic group is inherited from the containing folder.</td></tr>
+<tr><td><code>unit</code></td><td>integer</td><td>1</td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="ltm_virtualAddress_metadata.html">metadata</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined generic data for the virtual address. It is a name and value pair.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/profile</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/profile</h1>
+<p>Virtual server profile configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/profile</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/profile/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="ltm_profile_analytics.html">analytics</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server analytics profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_certificateAuthority.html">certificateAuthority</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Certificate Authority profile configuration.</td></tr>
+<tr><td><code><a href="ltm_profile_classification.html">classification</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server classification profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_clientLdap.html">clientLdap</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Client LDAP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_clientSsl.html">clientSsl</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server client-side proxy SSL profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_dhcpv4.html">dhcpv4</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Dynamic Host Configuration Protocol, DHCPv4, profile to manage DHCPv4 network traffic.</td></tr>
+<tr><td><code><a href="ltm_profile_dhcpv6.html">dhcpv6</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Dynamic Host Configuration Protocol, DHCPv6, profile to manage DHCPv6 network traffic.</td></tr>
+<tr><td><code><a href="ltm_profile_diameter.html">diameter</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Diameter traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_dns.html">dns</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server DNS traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_dnsLogging.html">dnsLogging</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>High-speed logging settings for the DNS profile.</td></tr>
+<tr><td><code><a href="ltm_profile_fasthttp.html">fasthttp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Fast HTTP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_fastl4.html">fastl4</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server FastL4 traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_fix.html">fix</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Financial Information eXchange(FIX) profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_ftp.html">ftp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server FTP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_gtp.html">gtp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server GTP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_html.html">html</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server HTML profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_http.html">http</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server HTTP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_httpCompression.html">httpCompression</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server HTTP compression profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_http2.html">http2</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server HTTP/2 traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_icap.html">icap</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Internet Content Adaptation Protocol (ICAP) profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_iiop.html">iiop</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server IIOP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_ipother.html">ipother</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server IPOTHER for non-TCP and non-UDP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_mblb.html">mblb</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>MBLB profile configuration (experimental)</td></tr>
+<tr><td><code><a href="ltm_profile_mssql.html">mssql</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server MSSQL profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_ntlm.html">ntlm</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server NT Lan Manager profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_ocspStaplingParams.html">ocspStaplingParams</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>OCSP Stapling Parameters for clientssl profiles. This object should be associated with a cert-key-chain object in a clientssl profile.</td></tr>
+<tr><td><code><a href="ltm_profile_oneConnect.html">oneConnect</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server OneConnect profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_pcp.html">pcp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>LSN Pool PCP configuration profile</td></tr>
+<tr><td><code><a href="ltm_profile_pptp.html">pptp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Point to Point Tunneling Protocol (PPTP) profile configuration.</td></tr>
+<tr><td><code><a href="ltm_profile_qoe.html">qoe</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Quality of Experience profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_radius.html">radius</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Radius traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_ramcache.html">ramcache</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="ltm_profile_requestAdapt.html">requestAdapt</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server HTTP request adaptation profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_requestLog.html">requestLog</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server request logging profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_responseAdapt.html">responseAdapt</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server HTTP response adaptation profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_rewrite.html">rewrite</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Rewrite profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_rtsp.html">rtsp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server RTSP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_sctp.html">sctp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server SCTP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_serverLdap.html">serverLdap</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Server LDAP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_serverSsl.html">serverSsl</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server server-side proxy SSL profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_sip.html">sip</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server SIP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_smtp.html">smtp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server SMTP profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_smtps.html">smtps</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server SMTPs traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_socks.html">socks</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server SOCKS traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_spdy.html">spdy</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server SPDY traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_statistics.html">statistics</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server custom statistics configuration</td></tr>
+<tr><td><code><a href="ltm_profile_stream.html">stream</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Stream traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_tcp.html">tcp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server TCP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_tftp.html">tftp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server TFTP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_udp.html">udp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server UDP traffic profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_waCache.html">waCache</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="ltm_profile_webAcceleration.html">webAcceleration</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server Web Acceleration profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_webSecurity.html">webSecurity</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Virtual server Web Security profile configuration</td></tr>
+<tr><td><code><a href="ltm_profile_xml.html">xml</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server XML configuration</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

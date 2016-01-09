@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/classification</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/classification</h1>
+<p>Traffic Classification</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/classification</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/classification/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="ltm_classification_application.html">application</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Traffic Classification Application</td></tr>
+<tr><td><code><a href="ltm_classification_category.html">category</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Traffic Classification Category</td></tr>
+<tr><td><code><a href="ltm_classification_signatureDefinition.html">signatureDefinition</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Configure status for classification signature updates.</td></tr>
+<tr><td><code><a href="ltm_classification_signatureUpdateSchedule.html">signatureUpdateSchedule</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configure scheduling for classification signature updates.</td></tr>
+<tr><td><code><a href="ltm_classification_signatureVersion.html">signatureVersion</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="ltm_classification_signatures.html">signatures</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Load classification signatures file either from folder /var/log/dpi/signatures/, or from the folder specified in the name of the file.</td></tr>
+<tr><td><code><a href="ltm_classification_updateSignatures.html">updateSignatures</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Run classification signatures update.</td></tr>
+<tr><td><code><a href="ltm_classification_urlCatPolicy.html">urlCatPolicy</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>URL Categorization policy</td></tr>
+<tr><td><code><a href="ltm_classification_urlCategory.html">urlCategory</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>URL Classification Category</td></tr>
+<tr><td><code><a href="ltm_classification_urldbFeedList.html">urldbFeedList</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Reusable URLDB feed lists for URL Categorization.</td></tr>
+<tr><td><code><a href="ltm_classification_urldbFile.html">urldbFile</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>File object for custom url category database.</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="ltm_classification_stats.html">stats</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

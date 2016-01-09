@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/datastor</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/datastor</h1>
+<p>Optimization data storage configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/datastor</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/datastor/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>cacheSize</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Displays the size of the data storage in megabytes (MB).</td></tr>
+<tr><td><code>dedupCacheWeight</code></td><td>integer</td><td>10</td><td>optional</td><td>read/write</td><td>Specifies the relative weight of the dedup cache.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>disk</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables the use of the disk for data storage.</td></tr>
+<tr><td><code>highWaterMark</code></td><td>integer</td><td>90</td><td>optional</td><td>read/write</td><td>Specifies the percentage of full cache above which pruning starts.</td></tr>
+<tr><td><code>lowWaterMark</code></td><td>integer</td><td>80</td><td>optional</td><td>read/write</td><td>Specifies the percentage of full cache below which pruning stops.</td></tr>
+<tr><td><code>storeSize</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Displays the amount of space for each disk path specified.</td></tr>
+<tr><td><code>webCacheWeight</code></td><td>integer</td><td>10</td><td>optional</td><td>read/write</td><td>Specifies the relative weight of the web cache.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

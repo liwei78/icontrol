@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/persistence/sip</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/persistence/sip</h1>
+<p>Virtual server SIP persistence profile configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/persistence/sip</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/persistence/sip/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the existing profile from which the system imports settings for the new profile.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>matchAcrossPools</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system can use any pool that contains this persistence record. The default value is disabled.</td></tr>
+<tr><td><code>matchAcrossServices</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that all persistent connections from a client IP address, which go to the same virtual IP address, also go to the same node. The default value is disabled.</td></tr>
+<tr><td><code>matchAcrossVirtuals</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that all persistent connections from the same client IP address go to the same node. The default value is disabled.</td></tr>
+<tr><td><code>mirror</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies whether the system mirrors persistence records to the high-availability peer. The default value is disabled.</td></tr>
+<tr><td><code>mode</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>overrideConnectionLimit</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the pool member connection limits are not enforced for persisted clients. Per-virtual connection limits remain hard limits and are not disabled. The default value is disabled.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the profile resides.</td></tr>
+<tr><td><code>sipInfo</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the SIP header field on which you want SIP sessions to persist. The default value is none.</td></tr>
+<tr><td><code>timeout</code></td><td>string</td><td>180</td><td>optional</td><td>read/write</td><td>Specifies the duration of the persistence entries. The default value is 180 seconds.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

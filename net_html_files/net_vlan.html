@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/vlan</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/vlan</h1>
+<p>VLAN configuration and statistics</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net/vlan</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/vlan/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>autoLasthop</code></td><td>string</td><td>default</td><td>optional</td><td>read/write</td><td>Specifies whether auto lasthop is enabled or not. The default is to use next levels default.</td></tr>
+<tr><td><code>cmpHash</code></td><td>string</td><td>default</td><td>optional</td><td>read/write</td><td>Specifies the cmp hash applied to the traffic on the vlan.</td></tr>
+<tr><td><code>customerTag</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a number that the system adds into the header of any frame passing through the QinQ VLAN.</td></tr>
+<tr><td><code>dagRoundRobin</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies whether some of the stateless traffic on the VLAN should be disaggregated in a round-robin order.</td></tr>
+<tr><td><code>dagTunnel</code></td><td>string</td><td>outer</td><td>optional</td><td>read/write</td><td>Specifies whether the ip tunnel traffic on the VLAN should be disaggregated based on the inner ip header or outer ip header. The default value is outer.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>failsafe</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables a fail-safe mechanism that causes the active unit to fail over to a redundant unit when loss of traffic is detected on a VLAN, and traffic is not restored during the failover timeout period for that VLAN. The default action set with VLAN fail-safe is restart all. When the fail-safe mechanism is triggered, all the daemons are restarted and the unit fails over. The default value is disable.</td></tr>
+<tr><td><code>failsafeAction</code></td><td>string</td><td>failover-restart-tm</td><td>optional</td><td>read/write</td><td>Specifies the action that you want the system to take when it does not detect any traffic on this VLAN, and the timeout has expired.</td></tr>
+<tr><td><code>failsafeTimeout</code></td><td>integer</td><td>90</td><td>optional</td><td>read/write</td><td>Specifies the number of seconds that an active unit can run without detecting network traffic on this VLAN before it initiates a failover. The default value is 90 seconds.</td></tr>
+<tr><td><code>ifIndex</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Displays the index assigned to this VLAN. It is a unique identifier assigned for all objects displayed in the SNMP IF-MIB.</td></tr>
+<tr><td><code>learning</code></td><td>string</td><td>enable-forward</td><td>optional</td><td>read/write</td><td>Specifies whether switch ports placed in the VLAN are configured for switch learning, forwarding only, or dropped. The default value is enable.</td></tr>
+<tr><td><code>mtu</code></td><td>integer</td><td>1500</td><td>optional</td><td>read/write</td><td>Sets a specific maximum transmission unit (MTU) for the VLAN. The default value is 1500.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the vlan resides.</td></tr>
+<tr><td><code>sourceChecking</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies that only connections that have a return route in the routing table are accepted. The default value is disable.</td></tr>
+<tr><td><code>tag</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies a number that the system adds into the header of any frame passing through the VLAN.</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="net_vlan_interfaces.html">interfaces</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies which interfaces you want this VLAN to use for traffic management.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="net_vlan_sflow.html">sflow</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

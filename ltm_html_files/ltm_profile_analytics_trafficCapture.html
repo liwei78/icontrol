@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/profile/analytics/trafficCapture</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/profile/analytics/trafficCapture</h1>
+<p>Manage the set of analytics alerts that are associated with an analytics profile.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/profile/analytics/trafficCapture</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/profile/analytics/trafficCapture/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>capturedProtocols</code></td><td>string</td><td>all</td><td>optional</td><td>read/write</td><td>Specifies whether the system captures traffic data sent using all protocols, or only one type of protocol.</td></tr>
+<tr><td><code>clientIps</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of client IPs from/to which captured traffic is sent.</td></tr>
+<tr><td><code>dosActivity</code></td><td>string</td><td>any</td><td>optional</td><td>read/write</td><td>Specifies whether the system captures traffic data mitigated by DoS Layer 7 Enforcer or regardless of DoS activity.</td></tr>
+<tr><td><code>methods</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of HTTP methods from/to which captured traffic is sent.</td></tr>
+<tr><td><code>requestCapturedParts</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies what parts of the request data the system captures.</td></tr>
+<tr><td><code>requestContentFilterSearchPart</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies which part of the request is filtered by a specific string.</td></tr>
+<tr><td><code>requestContentFilterSearchString</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the string by which the request data is filtered, or none.</td></tr>
+<tr><td><code>responseCapturedParts</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies what parts of the response data the system captures.</td></tr>
+<tr><td><code>responseCodes</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of HTTP response codes from which traffic is captured.</td></tr>
+<tr><td><code>responseContentFilterSearchPart</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies which part of the response is filtered by a specific string.</td></tr>
+<tr><td><code>responseContentFilterSearchString</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the string by which the response data is filtered or none.</td></tr>
+<tr><td><code>urlPathPrefixes</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of URL path prefixes of which to capture traffic.</td></tr>
+<tr><td><code>userAgentSubstrings</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of user agent substrings of which to capture traffic.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>nodeAddresses</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of node addresses from/to which captured traffic is sent.</td></tr>
+<tr><td><code>virtualServers</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of virtual servers from/to which captured traffic is sent.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

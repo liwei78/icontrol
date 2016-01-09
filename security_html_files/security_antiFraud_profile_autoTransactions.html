@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/security/antiFraud/profile/autoTransactions</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/security/antiFraud/profile/autoTransactions</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>botScore</code></td><td>integer</td><td>50</td><td>optional</td><td>read/write</td><td>Specifies the score added to an alert that is triggered if the system determines that the client is a bot and not a human.</td></tr>
+<tr><td><code>clickScore</code></td><td>integer</td><td>40</td><td>optional</td><td>read/write</td><td>Specifies the score added to an alert that is triggered if the min-mouse-over-count and min-mouse-move-count conditions are not met.</td></tr>
+<tr><td><code>integrityFailScore</code></td><td>integer</td><td>50</td><td>optional</td><td>read/write</td><td>Specifies the score added to an alert that is triggered if the system detects a difference between the actual parameter value and the expected value of a protected parameter sent after a user clicks a web form's Submit button.</td></tr>
+<tr><td><code>minMouseMoveCount</code></td><td>integer</td><td>5</td><td>optional</td><td>read/write</td><td>Specifies the minimum number of mouse movements necessary per page load in order for the system to consider the transaction to be of human origin.</td></tr>
+<tr><td><code>minMouseOverCount</code></td><td>integer</td><td>2</td><td>optional</td><td>read/write</td><td>Specifies the minimum number of times the client's mouse is positioned over the Submit button in a web form in order for the system to consider the transaction to be of human origin.</td></tr>
+<tr><td><code>minReportScore</code></td><td>integer</td><td>50</td><td>optional</td><td>read/write</td><td>Specifies the lowest score necessary for the system to send an alert.</td></tr>
+<tr><td><code>minTimeToRequest</code></td><td>integer</td><td>2</td><td>optional</td><td>read/write</td><td>Specifies the minimum amount of time (in seconds) permitted between when a web form is opened and the Submit button is clicked.</td></tr>
+<tr><td><code>notHumanScore</code></td><td>integer</td><td>25</td><td>optional</td><td>read/write</td><td>Specifies the score added to an alert that is triggered if the system only suspects that the client is a bot and not a human.</td></tr>
+<tr><td><code>scoreTamperedCookie</code></td><td>integer</td><td>50</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>tamperedCookieScore</code></td><td>integer</td><td>50</td><td>optional</td><td>read/write</td><td>Specifies the score added to an alert that is triggered if the system detects that the transaction-data cookie was tampered with.</td></tr>
+<tr><td><code>timeFailScore</code></td><td>integer</td><td>20</td><td>optional</td><td>read/write</td><td>Specifies the score added to an alert that is triggered if the min-time-to-request condition is not met.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

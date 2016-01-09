@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/pem/policy/rules/flowInfoFilters</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/pem/policy/rules/flowInfoFilters</h1>
+<p>Specifies the flow info filter.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/pem/policy/rules/flowInfoFilters</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/pem/policy/rules/flowInfoFilters/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the application service that the object belongs to.</td></tr>
+<tr><td><code>dscpCode</code></td><td>string</td><td>64</td><td>optional</td><td>read/write</td><td>Specifies the value of DSCP code which matches incoming traffic based on a value in the DSCP field in the IP header. The range is 0 to 63, or disabled. The default value is disabled, indicating that the DSCP code will not be used to filter the packet in the flow-info-filter.</td></tr>
+<tr><td><code>dstIpAddr</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the destination IP address and prefix length that the rule applies to. The format is [ip address/prefixlen]. The default value is 0.0.0.0/0.</td></tr>
+<tr><td><code>dstPort</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the destination port of the traffic flow that the rule applies to. The default value is any.</td></tr>
+<tr><td><code>fromVlan</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the source vlan to match the ingress flow arriving from that vlan.</td></tr>
+<tr><td><code>ipAddrType</code></td><td>string</td><td>any</td><td>optional</td><td>read/write</td><td>Specifies the ip-address type (IPv4 or IPv6). The default value is any.</td></tr>
+<tr><td><code>l2Endpoint</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies an L2 end point type to be used when matching the traffic flows. The options are disabled and vlan. The option vlan indicates the vlan name specified in from-vlan is used to match the traffic flows. The default value is disabled, indicating that L2 endpoint is not used to match the flows</td></tr>
+<tr><td><code>operation</code></td><td>string</td><td>match</td><td>optional</td><td>read/write</td><td>Specifies whether the rule applies to traffic that matches (match) or does not match (nomatch) the traffic flow defined here. The options are match and nomatch. The default value is match.</td></tr>
+<tr><td><code>proto</code></td><td>string</td><td>any</td><td>optional</td><td>read/write</td><td>Specifies the protocol that this rule applies to. The default value is any.</td></tr>
+<tr><td><code>srcIpAddr</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the source IP address and prefix length that the rule applies to. The format is [ip address/prefixlen]. The default value is 0.0.0.0/0.</td></tr>
+<tr><td><code>srcPort</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the source port of the traffic flow that the rule applies to. The default value is any.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

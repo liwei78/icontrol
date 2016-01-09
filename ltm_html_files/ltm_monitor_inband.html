@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/monitor/inband</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/monitor/inband</h1>
+<p>Inband monitor configuration.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/monitor/inband</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/monitor/inband/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the name of the monitor from which you want your custom monitor to inherit settings. The default value is inband.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>destination</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>failureInterval</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies an interval, in seconds. If the number of failures specified in the failures option occurs within this interval, the system marks the pool member as being unavailable.</td></tr>
+<tr><td><code>failures</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the number of times within a given time period that the system tries to connect to a pool member before marking that server as being unavailable. The default value is 3. Specifying a value of 0 (zero) disables this option. A failure can be either a failure to connect or a failure of the pool member to respond within the time specified in the response-time option.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the monitor resides.</td></tr>
+<tr><td><code>responseTime</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies an amount of time, in seconds. If the pool member does not respond with data after the specified amount of time has passed, the number of failures in this interval increments by 1. Specifying a value of 0 (zero) disables this option.</td></tr>
+<tr><td><code>retryTime</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the amount of time in seconds after the pool member has been marked unavailable before the system retries to connect to the pool member. Specifying a value of 0 (zero) disables this option.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

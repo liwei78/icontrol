@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/routeDomain</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/routeDomain</h1>
+<p>Route domain configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net/routeDomain</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/routeDomain/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>bwcPolicy</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The bandwidth control policy used for traffic flow.</td></tr>
+<tr><td><code>connectionLimit</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the maximum number of concurrent connections you want to allow for the route domain.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>flowEvictionPolicy</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the flow eviction policy for the route domain to use when the connection limit is approached.</td></tr>
+<tr><td><code>fwEnforcedPolicy</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Enforced firewall policy.</td></tr>
+<tr><td><code>fwStagedPolicy</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Staged firewall policy.</td></tr>
+<tr><td><code>id</code></td><td>integer</td><td> </td><td>optional</td><td>read</td><td>Numerical ID of the route domain</td></tr>
+<tr><td><code>ipIntelligencePolicy</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Name of the IP Intelligence (Dynamic White/Black List) policy that is attached.</td></tr>
+<tr><td><code>parent</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the route domain from which this route domain inherits settings. The default value is empty, which indicates no parent.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the route-domain resides.</td></tr>
+<tr><td><code>servicePolicy</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the service policy to use.</td></tr>
+<tr><td><code>strict</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether the system allows a connection to span route domains.</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="net_routeDomain_fwActive.html">fwActive</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Firewall policy rule entry</td></tr>
+<tr><td><code><a href="net_routeDomain_fwEnforcedPolicyRules.html">fwEnforcedPolicyRules</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Firewall policy rule entry</td></tr>
+<tr><td><code><a href="net_routeDomain_fwStagedPolicyRules.html">fwStagedPolicyRules</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Firewall policy rule entry</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>routingProtocol</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies routing protocols, by name, for the system to use in the route domain. The default value is none. Dynamic routing must be licensed to use this option.</td></tr>
+<tr><td><code>vlans</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies VLANs, by name, for the system to use in the route domain. The default value is none.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/profile/mssql</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/profile/mssql</h1>
+<p>Virtual server MSSQL profile configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/profile/mssql</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/profile/mssql/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Specifies the administrative partition within which the profile resides.</td></tr>
+<tr><td><code>readPool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the pool of MS SQL database servers to which the system sends ready-only requests.</td></tr>
+<tr><td><code>readWriteSplitByCommand</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>When enabled, the system decides which pool to send the client requests to by the content in the message.</td></tr>
+<tr><td><code>readWriteSplitByUser</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>When enabled, the system decides which pool to send the client requests to by user name.</td></tr>
+<tr><td><code>userCanWriteByDefault</code></td><td>string</td><td>true</td><td>optional</td><td>read/write</td><td>Specifies whether users have write access by default. When set to true, all users have write access, except those added to the users list</td></tr>
+<tr><td><code>userList</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the users who have read-only access to the MS SQL if user-can-write-by-default is true, or the users who have write access to the MS SQL database if user-can-write-by-default is false.</td></tr>
+<tr><td><code>writePersistTimer</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specify how many minimum time in milliseconds the connection will be persisted to write-pool after connection switch to write pool.</td></tr>
+<tr><td><code>writePool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the pool of MS SQL database servers to which the system sends requests that are not read-only</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

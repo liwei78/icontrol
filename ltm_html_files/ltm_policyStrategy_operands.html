@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/policyStrategy/operands</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/policyStrategy/operands</h1>
+<p></p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/policyStrategy/operands</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/policyStrategy/operands/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>all</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match everything to the strategy.</td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>browserType</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>browserVersion</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>cipher</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a specific cipher.</td></tr>
+<tr><td><code>cipherBits</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on cipher bits.</td></tr>
+<tr><td><code>clientSsl</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on a client SSL stream.</td></tr>
+<tr><td><code>code</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a code.</td></tr>
+<tr><td><code>continent</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>countryCode</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>countryName</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>cpuUsage</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on cpu usage percentage for the past 15secs, 1min or 5min intervals.</td></tr>
+<tr><td><code>deviceMake</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>deviceModel</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>domain</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on the specified domain.</td></tr>
+<tr><td><code>expiry</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a given expiry.</td></tr>
+<tr><td><code>extension</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a given extension.</td></tr>
+<tr><td><code>geoip</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on a geographic property of an IP address.</td></tr>
+<tr><td><code>host</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a particular host.</td></tr>
+<tr><td><code>httpBasicAuth</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an http basic authorization.</td></tr>
+<tr><td><code>httpCookie</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an HTTP cookie.</td></tr>
+<tr><td><code>httpHeader</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an HTTP header.</td></tr>
+<tr><td><code>httpHost</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an HTTP host.</td></tr>
+<tr><td><code>httpMethod</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an HTTP method.</td></tr>
+<tr><td><code>httpReferer</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an HTTP referer.</td></tr>
+<tr><td><code>httpSetCookie</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an HTTP set cookie.</td></tr>
+<tr><td><code>httpStatus</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an HTTP status.</td></tr>
+<tr><td><code>httpUri</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an HTTP URI.</td></tr>
+<tr><td><code>httpUserAgent</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an HTTP user agent substring or version.</td></tr>
+<tr><td><code>httpVersion</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on an HTTP version.</td></tr>
+<tr><td><code>isp</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>last_15secs</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>last_1min</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>last_5mins</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>major</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a major.</td></tr>
+<tr><td><code>minor</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a minor.</td></tr>
+<tr><td><code>mss</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on maximum segment size.</td></tr>
+<tr><td><code>tmName</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a given name.</td></tr>
+<tr><td><code>org</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>password</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a given password.</td></tr>
+<tr><td><code>path</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a particular path.</td></tr>
+<tr><td><code>pathSegment</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a given path.</td></tr>
+<tr><td><code>port</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a particular port.</td></tr>
+<tr><td><code>protocol</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a given protocol.</td></tr>
+<tr><td><code>queryParameter</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a given query parameter.</td></tr>
+<tr><td><code>queryString</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a given query string.</td></tr>
+<tr><td><code>regionCode</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>regionName</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>request</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td>Use this strategy on a request.</td></tr>
+<tr><td><code>response</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td>Use this strategy on a response.</td></tr>
+<tr><td><code>routeDomain</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a particular route domain.</td></tr>
+<tr><td><code>rtt</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on round trip time.</td></tr>
+<tr><td><code>scheme</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a scheme used.</td></tr>
+<tr><td><code>tcp</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Match on a TCP stream.</td></tr>
+<tr><td><code>text</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on text.</td></tr>
+<tr><td><code>unnamedQueryParameter</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on an unnamed query parameter.</td></tr>
+<tr><td><code>userAgentToken</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>username</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a given username.</td></tr>
+<tr><td><code>value</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a given value.</td></tr>
+<tr><td><code>version</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a version.</td></tr>
+<tr><td><code>vlan</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a particular VLAN.</td></tr>
+<tr><td><code>vlanId</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Match on a particular VLAN id.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

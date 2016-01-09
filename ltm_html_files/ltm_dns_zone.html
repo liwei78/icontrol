@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/dns/zone</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/dns/zone</h1>
+<p>Zone configuration.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/dns/zone</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/dns/zone/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>dnsExpressAllowNotify</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a list of IP addresses, in addition to the DNS Zone's DNS-Express Server address, which are allowed to notify the BIGIP of DNS Zone changes.</td></tr>
+<tr><td><code>dnsExpressEnabled</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether DNS Express is enabled to process queries for this zone. The default value is yes.</td></tr>
+<tr><td><code>dnsExpressNotifyAction</code></td><td>string</td><td>consume</td><td>optional</td><td>read/write</td><td>Action to take when a NOTIFY query is received for a configured zone.  Options are consume, bypass, and repeat. Default is consume, meaning the NOTIFY query is seen only by DNS Express. bypass means the query will NOT go to DNS Express, but any backend DNS resource (subject to DNS profile unhandled-query-action).  repeat means the NOTIFY will go to both DNS Express and any backend DNS resource.  If TSIG is configured, the signature is only validated for consume and repeat actions. NOTIFY responses are assumed to be sent by the backend DNS resource, except when the action is Consume and DNS Express will generate a response.</td></tr>
+<tr><td><code>dnsExpressNotifyTsigVerify</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Verify NOTIFY query TSIG for a DNS Express zone. Default is yes.</td></tr>
+<tr><td><code>dnsExpressServer</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the server from which to retrieve zone information for DNS Express.</td></tr>
+<tr><td><code>responsePolicy</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>Specifies if the zone contains response policy resource records.</td></tr>
+<tr><td><code>serverTsigKey</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the TSIG key associated with the DNS zone.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>transferClients</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the nameservers allowed to transfer the zone from BIGIP.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

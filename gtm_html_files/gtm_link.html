@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/gtm/link</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/gtm/link</h1>
+<p>Link configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/gtm/link</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/gtm/link/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>costSegments</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the cost of each incremental segment of bandwidth. This option is valid only if the weighting is set to price.</td></tr>
+<tr><td><code>datacenter</code></td><td>string</td><td> </td><td>required</td><td>read/write</td><td>Specifies the data center to which the link belongs.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>disabled</code></td><td>boolean</td><td>true</td><td>optional</td><td>read/write</td><td>Specifies that the link and its resources are not available for load balancing.</td></tr>
+<tr><td><code>duplexBilling</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables duplex billing for this link. The default value is enabled. This option is valid only when the weighting option is set to price.</td></tr>
+<tr><td><code>enabled</code></td><td>boolean</td><td>true</td><td>optional</td><td>read/write</td><td>Specifies that the link and its resources are available for load balancing.</td></tr>
+<tr><td><code>limitMaxInboundBps</code></td><td>uint64</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the threshold for inbound traffic on the link.</td></tr>
+<tr><td><code>limitMaxInboundBpsStatus</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables the limit-max-inbound-bps option for this link. The default value is disabled.</td></tr>
+<tr><td><code>limitMaxOutboundBps</code></td><td>uint64</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the threshold for outbound traffic on the link.</td></tr>
+<tr><td><code>limitMaxOutboundBpsStatus</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables the limit-max-outbound-bps option for this link. The default value is disabled.</td></tr>
+<tr><td><code>limitMaxTotalBps</code></td><td>uint64</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the threshold as a sum of inbound and outbound traffic on the link.</td></tr>
+<tr><td><code>limitMaxTotalBpsStatus</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables the limit-max-total-bps option for this link. The default value is disabled.</td></tr>
+<tr><td><code>linkRatio</code></td><td>integer</td><td>1</td><td>optional</td><td>read/write</td><td>Specifies the frequency at which the system sends traffic through the link. When you set this option, you must also set the Weighting option to Ratio.</td></tr>
+<tr><td><code>monitor</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the health monitors that the system uses to determine whether this link is available for load balancing.</td></tr>
+<tr><td><code>prepaidSegment</code></td><td>uint64</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the amount of bandwidth for which the system is prepaid. This option is valid only when the weighting option is set to price. The default value is 0 (zero).</td></tr>
+<tr><td><code>serviceProvider</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the Internet service provider that supplies this link.</td></tr>
+<tr><td><code>uplinkAddress</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the IP address used to gather SNMP metrics from the router interface. When you configure an uplink address, the system sends SNMP requests to the IP addresses configured in the Router Address List for this link.</td></tr>
+<tr><td><code>weighting</code></td><td>string</td><td>ratio</td><td>optional</td><td>read/write</td><td>Specifies the weighting methodology the system uses to select a link to which to send traffic. The options are Ratio (Specifies that the system uses the value that you set in the Link-Ratio option to determine the link to which to send traffic.) and Price/Dynamic Ratio (Specifies that the system continuously checks the performance of each link and sends traffic through the link with the best performance data.)</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="gtm_link_routerAddresses.html">routerAddresses</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, modifies, replaces, or deletes a router address.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

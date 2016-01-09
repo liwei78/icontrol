@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/profile/http/enforcement</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/profile/http/enforcement</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>excessClientHeaders</code></td><td>string</td><td>reject</td><td>optional</td><td>read/write</td><td>Specifies the behavior when too many client headers are received. If enabled, will switch to pass through mode instead of rejecting the connection.</td></tr>
+<tr><td><code>excessServerHeaders</code></td><td>string</td><td>reject</td><td>optional</td><td>read/write</td><td>Specifies the behavior when too many server headers are received. If enabled, will switch to pass through mode instead of rejecting the connection.</td></tr>
+<tr><td><code>knownMethods</code></td><td>string</td><td>CONNECT DELETE GET HEAD LOCK OPTIONS POST PROPFIND PUT TRACE UNLOCK</td><td>optional</td><td>read/write</td><td>Specifies which HTTP methods count as being known.  Removing RFC-defined methods from this list will cause the HTTP filter to not recognize them.</td></tr>
+<tr><td><code>maxHeaderCount</code></td><td>integer</td><td>64</td><td>optional</td><td>read/write</td><td>Specifies the maximum number of headers allowed in HTTP request/response. The default is 64 headers.</td></tr>
+<tr><td><code>maxHeaderSize</code></td><td>integer</td><td>32768</td><td>optional</td><td>read/write</td><td>Specifies the maximum header size.</td></tr>
+<tr><td><code>maxRequests</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the number of requests that the system accepts on a per-connection basis. The default value is 0 (zero), which means the system does not limit the number of requests per connection.</td></tr>
+<tr><td><code>oversizeClientHeaders</code></td><td>string</td><td>reject</td><td>optional</td><td>read/write</td><td>Specifies the behavior when too-large client headers are received. If enabled, will switch to pass through mode instead of rejecting the connection.</td></tr>
+<tr><td><code>oversizeServerHeaders</code></td><td>string</td><td>reject</td><td>optional</td><td>read/write</td><td>Specifies the behavior when too-large server headers are received. If enabled, will switch to pass through mode instead of rejecting the connection.</td></tr>
+<tr><td><code>pipeline</code></td><td>string</td><td>allow</td><td>optional</td><td>read/write</td><td>Enables HTTP/1.1 pipelining. This allows clients to make requests even when prior requests have not received a response. In order for this to succeed, however, destination servers must include support for pipelining. If set to pass-through, pipelined data will cause the BigIP to immediately switch to pass-through mode and disable the HTTP filter.</td></tr>
+<tr><td><code>truncatedRedirects</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies what happens if a truncated redirect is seen from a server. If enabled, the redirect will be forwarded to the client, otherwise the malformed HTTP will be silently ignored.</td></tr>
+<tr><td><code>unknownMethod</code></td><td>string</td><td>allow</td><td>optional</td><td>read/write</td><td>Specifies whether to allow, reject or switch to pass-through mode when an unknown HTTP method is parsed.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

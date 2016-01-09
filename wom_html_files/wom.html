@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/wom</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/wom</h1>
+<p>WAN Optimization</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/wom</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/wom/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="wom_advertisedRoute.html">advertisedRoute</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configure a route advertised by the local endpoint to remote endpoints</td></tr>
+<tr><td><code><a href="wom_deduplication.html">deduplication</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Symmetric data deduplication configuration</td></tr>
+<tr><td><code><a href="wom_diagnoseConn.html">diagnoseConn</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Network connection problem diagnosis</td></tr>
+<tr><td><code><a href="wom_endpointDiscovery.html">endpointDiscovery</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configure automatic discovery of remote endpoints</td></tr>
+<tr><td><code><a href="wom_localEndpoint.html">localEndpoint</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Local endpoint configuration</td></tr>
+<tr><td><code><a href="wom_remoteEndpoint.html">remoteEndpoint</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Remote endpoint configuration</td></tr>
+<tr><td><code><a href="wom_remoteRoute.html">remoteRoute</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display the destination routes learned from the remote endpoints</td></tr>
+<tr><td><code><a href="wom_serverDiscovery.html">serverDiscovery</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configure dynamic discovery of servers that can be reached through the local endpoint</td></tr>
+<tr><td><code><a href="wom_verifyConfig.html">verifyConfig</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>WAN Optimization Manager configuration problem detection</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="wom_profile.html">profile</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Virtual server profile configuration</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/security/antiFraud/profile/phishing</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/security/antiFraud/profile/phishing</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>allowedElements</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configures a list of URLs for which referrer checks are ignored.</td></tr>
+<tr><td><code>allowedReferrers</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configures a list of excepted domains that are allowed to request resources from the protected web application.</td></tr>
+<tr><td><code>cssAttributeName</code></td><td>string</td><td>clear2both</td><td>optional</td><td>read/write</td><td>Specifies the attribute name as part of the CSS content.</td></tr>
+<tr><td><code>cssContent</code></td><td>string</td><td>#%.*s { background-image: url(%.*s?id=%.*s&c=ss&phg=%.*s); }</td><td>optional</td><td>read/write</td><td>Specifies the content of the CSS file defined in the css-location setting.</td></tr>
+<tr><td><code>cssLocation</code></td><td>string</td><td>/files/css/style.css</td><td>optional</td><td>read/write</td><td>Specifies the BIG-IP URL location of the CSS file.</td></tr>
+<tr><td><code>expirationChecks</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system sends an alert if expired JavaScript engine files are used, as this is an indication of a phishing attack.</td></tr>
+<tr><td><code>imageLocation</code></td><td>string</td><td>/images/bsrmu.gif</td><td>optional</td><td>read/write</td><td>Specifies the BIG-IP URL location of the 1x1 pixel image file.</td></tr>
+<tr><td><code>protectedElements</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configures a list of URLs for which referrer header value is checked.</td></tr>
+<tr><td><code>referrerChecks</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system verifies (checks) requests coming to the web application for resources from different domains.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

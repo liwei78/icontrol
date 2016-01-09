@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/ipsec/trafficSelector</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/ipsec/trafficSelector</h1>
+<p>Traffic Selector configuration.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net/ipsec/trafficSelector</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/ipsec/trafficSelector/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>action</code></td><td>string</td><td>protect</td><td>optional</td><td>read/write</td><td>Specifies how the system handles traffic that matches the criteria in the traffic selector. Only protect is currently supported.</td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>destinationAddress</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the destination IP address of the traffic to be matched.</td></tr>
+<tr><td><code>destinationPort</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the destination port for which you want the traffic to be matched.</td></tr>
+<tr><td><code>direction</code></td><td>string</td><td>both</td><td>optional</td><td>read/write</td><td>Specifies the direction of traffic to be protected with IPsec. If the direction is both, use source-address and destination-address with respect to the outbound direction. The default value is both.</td></tr>
+<tr><td><code>ipProtocol</code></td><td>integer</td><td>255</td><td>optional</td><td>read/write</td><td>Specifies the IP protocol for which you want the traffic to be matched.</td></tr>
+<tr><td><code>ipsecPolicy</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the IPsec policy to be enforced on the matched traffic.</td></tr>
+<tr><td><code>order</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the order in which traffic is matched, if traffic can be matched to multiple traffic selectors.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>sourceAddress</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the source IP address of the traffic to be matched.</td></tr>
+<tr><td><code>sourcePort</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the source port for which you want the traffic to be matched.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

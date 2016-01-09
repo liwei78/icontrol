@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/auth/tacacs</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/auth/tacacs</h1>
+<p>TACACS+ configuration for remote TACACS+ client authentication</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/auth/tacacs</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/auth/tacacs/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>accounting</code></td><td>string</td><td>send-to-first-server</td><td>optional</td><td>read/write</td><td>If multiple TACACS+ servers are defined and pluggable authentication module (PAM) session accounting is enabled, sends accounting start and stop packets to the first available server or to all servers. The default value is send-to-first-server.</td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>authentication</code></td><td>string</td><td>use-first-server</td><td>optional</td><td>read/write</td><td>Specifies the process the system employs when sending authentication requests. The default is use-first-server. use-first-server specifies that the system sends authentication requests to only the first server in the list. use-all-servers specifies that the system sends an authentication request to each server until authentication succeeds, or until the system has sent a request to all servers in the list.</td></tr>
+<tr><td><code>debug</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables syslog-ng debugging information at LOG DEBUG level. Not recommended for normal use. The default value is disabled.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>encryption</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables encryption of TACACS+ packets. Recommended for normal use. The default value is enabled.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the partition within which the server resides.</td></tr>
+<tr><td><code>protocol</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the protocol associated with the value specified in the service option, which is a subset of the associated service being used for client authorization or system accounting.</td></tr>
+<tr><td><code>secret</code></td><td>string</td><td> </td><td>required</td><td>read/write</td><td>Sets the secret key used to encrypt and decrypt packets sent or received from the server. This option is required.</td></tr>
+<tr><td><code>servers</code></td><td>string</td><td> </td><td>required</td><td>read/write</td><td>Specifies a host name or IP address for the TACACS+ server. This option is required. Possible values are a user-specified string, and none. You must specify a server when you create a TACACS+ configuration object.</td></tr>
+<tr><td><code>service</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the service that the user is requesting to be authenticated to use. Identifying the service enables the TACACS+ server to behave differently for different types of authentication requests. This option is required.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

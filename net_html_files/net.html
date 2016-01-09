@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net</h1>
+<p>Network configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="net_arp.html">arp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Manage the Address Resolution Protocol (ARP) table</td></tr>
+<tr><td><code><a href="net_cmetrics.html">cmetrics</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Route metrics table display</td></tr>
+<tr><td><code><a href="net_dagGlobals.html">dagGlobals</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Global disaggregation settings</td></tr>
+<tr><td><code><a href="net_dnsResolver.html">dnsResolver</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>DNS Resolver object.</td></tr>
+<tr><td><code><a href="net_ikeEvtStat.html">ikeEvtStat</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="net_ikeMsgStat.html">ikeMsgStat</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="net_tmInterface.html">tmInterface</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Interface configuration and statistics</td></tr>
+<tr><td><code><a href="net_interfaceCos.html">interfaceCos</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Interface COS (Class of Service) related statistics</td></tr>
+<tr><td><code><a href="net_ipsecStat.html">ipsecStat</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>IPSec statistics</td></tr>
+<tr><td><code><a href="net_lldpGlobals.html">lldpGlobals</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="net_lldpNeighbors.html">lldpNeighbors</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="net_mroute.html">mroute</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Displays multicast routes</td></tr>
+<tr><td><code><a href="net_multicastGlobals.html">multicastGlobals</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Manage multicast traffic configuration options</td></tr>
+<tr><td><code><a href="net_ndp.html">ndp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Manage the IPv6 Neighbor Discovery Protocol (NDP) table.</td></tr>
+<tr><td><code><a href="net_packetFilter.html">packetFilter</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Packet filter configuration</td></tr>
+<tr><td><code><a href="net_packetFilterTrusted.html">packetFilterTrusted</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Trusted entities that are exempt from packet filter rules</td></tr>
+<tr><td><code><a href="net_portMirror.html">portMirror</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Interface port mirroring configuration</td></tr>
+<tr><td><code><a href="net_route.html">route</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Routing tables and configuration</td></tr>
+<tr><td><code><a href="net_routeDomain.html">routeDomain</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Route domain configuration</td></tr>
+<tr><td><code><a href="net_routerAdvertisement.html">routerAdvertisement</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configures IPv6 prefixes for router advertisement on a VLAN.</td></tr>
+<tr><td><code><a href="net_rstCause.html">rstCause</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>TCP/IP Reset Cause statistics.</td></tr>
+<tr><td><code><a href="net_self.html">self</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Self-IP address configuration</td></tr>
+<tr><td><code><a href="net_selfAllow.html">selfAllow</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The default set of protocol and ports allowed by a self IP</td></tr>
+<tr><td><code><a href="net_servicePolicy.html">servicePolicy</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Service Policy configuration</td></tr>
+<tr><td><code><a href="net_stp.html">stp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>STP configuration</td></tr>
+<tr><td><code><a href="net_stpGlobals.html">stpGlobals</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Global STP configuration, applies to all STP configuration items</td></tr>
+<tr><td><code><a href="net_timerPolicy.html">timerPolicy</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Timer Policy configuration</td></tr>
+<tr><td><code><a href="net_trunk.html">trunk</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Trunk configuration and statistics</td></tr>
+<tr><td><code><a href="net_vlan.html">vlan</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>VLAN configuration and statistics</td></tr>
+<tr><td><code><a href="net_vlanAllowed.html">vlanAllowed</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Available VLANs which can be used by the system</td></tr>
+<tr><td><code><a href="net_vlanGroup.html">vlanGroup</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>VLAN group configuration</td></tr>
+<tr><td><code><a href="net_wccp.html">wccp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>WCCP configuration</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="net_bwc.html">bwc</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Bandwidth related configuration</td></tr>
+<tr><td><code><a href="net_cos.html">cos</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Class of Service related configuration</td></tr>
+<tr><td><code><a href="net_fdb.html">fdb</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>VLAN/Tunnel forwarding database configuration and status</td></tr>
+<tr><td><code><a href="net_ipsec.html">ipsec</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>IPsec configuration</td></tr>
+<tr><td><code><a href="net_rateShaping.html">rateShaping</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Rate shaping configuration</td></tr>
+<tr><td><code><a href="net_tunnels.html">tunnels</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Tunnel configuration</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/messageRouting/sip/profile/session</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/messageRouting/sip/profile/session</h1>
+<p>Configures a Session Initiation Protocol (SIP) Session profile.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/messageRouting/sip/profile/session</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/messageRouting/sip/profile/session/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>customVia</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the custom value for the sent-by field of via</td></tr>
+<tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the profile that you want to use as the parent profile. Your new profile inherits all of the settings and values from the specified parent profile.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>doNotConnectBack</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables whether a connection to a request originator is re-established (if it no longer exists) in order to deliver a response.</td></tr>
+<tr><td><code>enableSipFirewall</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>Indicates whether SIP firewall capability is enabled.</td></tr>
+<tr><td><code>generateResponseOnFailure</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables sending failure response messages such as 4xx, 5xx and 6xx, when a SIP request is being dropped.</td></tr>
+<tr><td><code>honorVia</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables honoring any via which is not inserted by the system for routing the response.</td></tr>
+<tr><td><code>insertRecordRouteHeader</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables the insertion of a record-route header in requests that establish dialog.</td></tr>
+<tr><td><code>insertViaHeader</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables insertion of top via.</td></tr>
+<tr><td><code>loopDetection</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables loop-detection checking</td></tr>
+<tr><td><code>maxForwardsCheck</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables checking on max-forwards.</td></tr>
+<tr><td><code>maxMsgHeaderCount</code></td><td>integer</td><td>64</td><td>optional</td><td>read/write</td><td>Indicates the maximum count of expected SIP message header fields.</td></tr>
+<tr><td><code>maxMsgHeaderSize</code></td><td>integer</td><td>16000</td><td>optional</td><td>read/write</td><td>Indicates the maximum SIP message header size (in bytes).</td></tr>
+<tr><td><code>maxMsgSize</code></td><td>integer</td><td>65535</td><td>optional</td><td>read/write</td><td>Indicates the maximum number acceptable SIP message size (in bytes).</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="ltm_messageRouting_sip_profile_session_persistence.html">persistence</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/security/dos/profile/application/stressBased</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/security/dos/profile/application/stressBased</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>deEscalationPeriod</code></td><td>integer</td><td>7200</td><td>optional</td><td>read/write</td><td>Specifies the de-escalation period (in seconds) in Stress-based anomaly.</td></tr>
+<tr><td><code>escalationPeriod</code></td><td>integer</td><td>120</td><td>optional</td><td>read/write</td><td>Specifies the escalation period (in seconds) in Stress-based anomaly.</td></tr>
+<tr><td><code>geoCaptchaChallenge</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables Geolocation-based CAPTCHA challenge in Stress-based anomaly.</td></tr>
+<tr><td><code>geoClientSideDefense</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables Geolocation-based client side integrity defense in Stress-based anomaly.</td></tr>
+<tr><td><code>geoMinimumShare</code></td><td>integer</td><td>10</td><td>optional</td><td>read/write</td><td>Specifies the minimum traffic share for detection in Geolocation detection criteria of Stress-based anomaly.</td></tr>
+<tr><td><code>geoRateLimiting</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables Geolocation-based rate limiting in Stress-based anomaly.</td></tr>
+<tr><td><code>geoRequestBlockingMode</code></td><td>string</td><td>rate-limit</td><td>optional</td><td>read/write</td><td>Specifies a Geolocation-based request blocking mode of Stress-based anomaly.</td></tr>
+<tr><td><code>geoShareIncreaseRate</code></td><td>integer</td><td>500</td><td>optional</td><td>read/write</td><td>Specifies the percentage by which TPS increased in Geolocation detection criteria of Stress-based anomaly.</td></tr>
+<tr><td><code>ipCaptchaChallenge</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables Source IP-based CAPTCHA challenge in Stress-based anomaly.</td></tr>
+<tr><td><code>ipClientSideDefense</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables Source IP-based client side integrity defense in Stress-based anomaly.</td></tr>
+<tr><td><code>ipMaximumTps</code></td><td>integer</td><td>200</td><td>optional</td><td>read/write</td><td>Specifies the amount which TPS reached in IP detection criteria of Stress-based anomaly.</td></tr>
+<tr><td><code>ipMinimumTps</code></td><td>integer</td><td>40</td><td>optional</td><td>read/write</td><td>Specifies the minimum TPS threshold for detection in IP detection criteria of Stress-based anomaly.</td></tr>
+<tr><td><code>ipRateLimiting</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables Source IP-based rate limiting in Stress-based anomaly.</td></tr>
+<tr><td><code>ipRequestBlockingMode</code></td><td>string</td><td>rate-limit</td><td>optional</td><td>read/write</td><td>Specifies a Source IP-based request blocking mode of Stress-based anomaly.</td></tr>
+<tr><td><code>ipTpsIncreaseRate</code></td><td>integer</td><td>500</td><td>optional</td><td>read/write</td><td>Specifies the percentage by which TPS increased in IP detection criteria of Stress-based anomaly.</td></tr>
+<tr><td><code>mode</code></td><td>string</td><td>off</td><td>optional</td><td>read/write</td><td>Specifies an operation mode of Stress-based anomaly.</td></tr>
+<tr><td><code>siteCaptchaChallenge</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables Site-wide CAPTCHA challenge in Stress-based anomaly.</td></tr>
+<tr><td><code>siteClientSideDefense</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables Site-wide client side integrity defense in Stress-based anomaly.</td></tr>
+<tr><td><code>siteMaximumTps</code></td><td>integer</td><td>10000</td><td>optional</td><td>read/write</td><td>Specifies the amount which TPS reached in Site-wide detection criteria of Stress-based anomaly.</td></tr>
+<tr><td><code>siteMinimumTps</code></td><td>integer</td><td>2000</td><td>optional</td><td>read/write</td><td>Specifies the minimum TPS threshold for detection in Site-wide detection criteria of Stress-based anomaly.</td></tr>
+<tr><td><code>siteRateLimiting</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables Site-wide rate limiting in Stress-based anomaly.</td></tr>
+<tr><td><code>siteTpsIncreaseRate</code></td><td>integer</td><td>500</td><td>optional</td><td>read/write</td><td>Specifies the percentage by which TPS increased in Site-wide detection criteria of Stress-based anomaly.</td></tr>
+<tr><td><code>urlCaptchaChallenge</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>urlClientSideDefense</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables URL-based client side integrity defense in Stress-based anomaly.</td></tr>
+<tr><td><code>urlMaximumTps</code></td><td>integer</td><td>1000</td><td>optional</td><td>read/write</td><td>Specifies the amount which TPS reached in URL detection criteria of Stress-based anomaly.</td></tr>
+<tr><td><code>urlMinimumTps</code></td><td>integer</td><td>200</td><td>optional</td><td>read/write</td><td>Specifies the minimum TPS threshold for detection in URL detection criteria of Stress-based anomaly.</td></tr>
+<tr><td><code>urlRateLimiting</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables URL-based rate limiting in Stress-based anomaly.</td></tr>
+<tr><td><code>urlTpsIncreaseRate</code></td><td>integer</td><td>500</td><td>optional</td><td>read/write</td><td>Specifies the percentage by which TPS increased in URL detection criteria of Stress-based anomaly.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>behavioral</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

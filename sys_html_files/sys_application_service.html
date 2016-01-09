@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/application/service</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/application/service</h1>
+<p>Application configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/application/service</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/application/service/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>deviceGroup</code></td><td>string</td><td>default</td><td>optional</td><td>read/write</td><td>The name of the device group that the application service is assigned to.</td></tr>
+<tr><td><code>executeAction</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Run the specified template action associated with the application.</td></tr>
+<tr><td><code>inheritedDevicegroup</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Read-only. Shows whether the application folder will automatically remain with the same device-group as its parent folder. Use 'device-group default' or 'device-group non-default' to set this.</td></tr>
+<tr><td><code>inheritedTrafficGroup</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Read-only. Shows whether the application folder will automatically remain with the same traffic-group as its parent folder. Use 'traffic-group default' or 'traffic-group non-default' to set this.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the application resides.</td></tr>
+<tr><td><code>strictUpdates</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether configuration objects contained in the application may be directly modified, outside the context of the system's application management interfaces.</td></tr>
+<tr><td><code>template</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The template defines the configuration for the application. This may be changed after the application has been created to move the application to a new template.</td></tr>
+<tr><td><code>templateModified</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>Indicates that the application template used to deploy the application has been modified. The application should be updated to make use of the latest changes.</td></tr>
+<tr><td><code>templatePrerequisiteErrors</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Indicates any missing prerequisites associated with the template that defines this application.</td></tr>
+<tr><td><code>trafficGroup</code></td><td>string</td><td>default</td><td>optional</td><td>read/write</td><td>The name of the traffic group that the application service is assigned to.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="sys_application_service_lists.html">lists</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="sys_application_service_metadata.html">metadata</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined generic data for the application service. It is a name and value pair.</td></tr>
+<tr><td><code><a href="sys_application_service_tables.html">tables</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="sys_application_service_variables.html">variables</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

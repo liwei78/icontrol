@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/pem/forwardingEndpoint</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/pem/forwardingEndpoint</h1>
+<p>Defines PEM forwarding endpoint that is used to forward all the traffic to.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/pem/forwardingEndpoint</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/pem/forwardingEndpoint/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>endpointType</code></td><td>string</td><td>transparent</td><td>optional</td><td>read/write</td><td>Specifies the endpoint type.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which this endpoint resides.</td></tr>
+<tr><td><code>pool</code></td><td>string</td><td> </td><td>required</td><td>read/write</td><td>The name of a pre-configured LTM pool where the traffic is going to be forwarded to. A valid pool name must be specified.</td></tr>
+<tr><td><code>snatPool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of an existing LTM SNAT pool (snatpool) that is used to translate the client IP address to one of the configured IP addresses in that SNAT pool. Self-IP addresses of the BIG-IP system must not be included in the SNAT pool. The default value is none.</td></tr>
+<tr><td><code>sourcePort</code></td><td>string</td><td>preserve</td><td>optional</td><td>read/write</td><td>Specifies whether the system preserves the source port of the connection. The default value is preserve.</td></tr>
+<tr><td><code>translateAddress</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system translates the original destination address of the virtual server. When disabled, specifies that the system uses the address without translation. The default value is disabled.</td></tr>
+<tr><td><code>translateService</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Note that translate-service is really translate-port. It specifies, when enabled, that the system translates the original destination port. When disabled, it specifies that the system uses the original destination port without translation. The default value is disabled.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="pem_forwardingEndpoint_persistence.html">persistence</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

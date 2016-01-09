@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/gtm/persist</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/gtm/persist</h1>
+<p>Displays the total number of persistence objects on the system.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/gtm/persist</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/gtm/persist/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>destination</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Displays persistence records for the specified destination name.</td></tr>
+<tr><td><code>key</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Displays persistence records for the specified LDNS address or generic key.</td></tr>
+<tr><td><code>level</code></td><td>string</td><td>datacenter</td><td>optional</td><td>read/write</td><td>Displays persistence records for the specified level (destination type).</td></tr>
+<tr><td><code>maxResults</code></td><td>integer</td><td>1000</td><td>optional</td><td>read/write</td><td>Limits the maximum number of results that will be returned from GTM.</td></tr>
+<tr><td><code>targetName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Displays persistence records for the specified named target.</td></tr>
+<tr><td><code>targetType</code></td><td>string</td><td>datacenter</td><td>optional</td><td>read/write</td><td>Displays persistence records for the specified type of target.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>
