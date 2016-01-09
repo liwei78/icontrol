@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/profile/clientSsl/certKeyChain</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/profile/clientSsl/certKeyChain</h1>
+<p>Manage the set of certificate, key, passphrase and chain associated with a client SSL profile.</p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>cert</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the certificate installed on the traffic management system for the purpose of terminating or initiating an SSL connection.</td></tr>
+<tr><td><code>chain</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies or builds a certificate chain file that a client can use to authenticate the profile. To use the default chain name, specify default.</td></tr>
+<tr><td><code>key</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of a key file that you generated and installed on the system. The default key name is default.key.</td></tr>
+<tr><td><code>ocspStaplingParams</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the OCSP Stapling Parameters object associated with this cert-key-chain object in a clientssl profile.</td></tr>
+<tr><td><code>passphrase</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the key passphrase if required.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

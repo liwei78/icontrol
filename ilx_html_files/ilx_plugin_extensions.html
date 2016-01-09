@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ilx/plugin/extensions</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ilx/plugin/extensions</h1>
+<p>Specifies plugin or workspace extensions.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ilx/plugin/extensions</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ilx/plugin/extensions/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>concurrencyMode</code></td><td>string</td><td>single</td><td>optional</td><td>read/write</td><td>Specifies a concurrency mode for the extension.</td></tr>
+<tr><td><code>debugMode</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>Enables or disables debug mode of the extension. The plugin must be restarted for this setting to take effect.</td></tr>
+<tr><td><code>debugPortRangeHigh</code></td><td>integer</td><td>65535</td><td>optional</td><td>read/write</td><td>When debugging is started, ILX will start at the debug-port-range-low value and try until the debug-port-range-high value.</td></tr>
+<tr><td><code>debugPortRangeLow</code></td><td>integer</td><td>1025</td><td>optional</td><td>read/write</td><td>When debugging is started, ILX will start at the debug-port-range-low value and try until the debug-port-range-high value.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>extCachePath</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>heartbeatInterval</code></td><td>integer</td><td>15</td><td>optional</td><td>read/write</td><td>Specifies the maximum number of seconds between extension process heartbeats. A value of 0 (zero) disables heartbeat checking. The heartbeat should be disabled when the extension is being debugged.</td></tr>
+<tr><td><code>maxRestarts</code></td><td>integer</td><td>5</td><td>optional</td><td>read/write</td><td>The maximum number of times a extension will be restarted over the configured restart-interval.</td></tr>
+<tr><td><code>restartInterval</code></td><td>integer</td><td>60</td><td>optional</td><td>read/write</td><td>Interval in seconds, over which max-restarts may occur. The default value is 60 seconds.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

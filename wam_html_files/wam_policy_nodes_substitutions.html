@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/wam/policy/nodes/substitutions</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/wam/policy/nodes/substitutions</h1>
+<p>Parameter value substitution.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/wam/policy/nodes/substitutions</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/wam/policy/nodes/substitutions/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the description of the parameter value substitution.</td></tr>
+<tr><td><code>dstAlias</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a user-defined name for the destination ordinal of the unnamed query parameter or path segment setting.</td></tr>
+<tr><td><code>dstDirection</code></td><td>string</td><td>left-to-right</td><td>optional</td><td>read/write</td><td>Specifies how to count ordinals for destination parameter, from left-to-right or from right-to-left. Counting starts at 1.</td></tr>
+<tr><td><code>dstName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the query parameter cookie or header that you want the WebAccelerator system to replace in a request's URL.</td></tr>
+<tr><td><code>dstOrdinal</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the location of the unnamed query parameter or path segment in the path of a URL that you want the WebAccelerator system to replace during assembly.</td></tr>
+<tr><td><code>dstType</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Select a value for the WebAccelerator system to replace during the assembly process.</td></tr>
+<tr><td><code>dstUrls</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the URLs in the request for which you want the WebAccelerator system to replace content.</td></tr>
+<tr><td><code>srcAlias</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a user-defined name for the source ordinal of the unnamed query parameter or path segment setting.</td></tr>
+<tr><td><code>srcDirection</code></td><td>string</td><td>left-to-right</td><td>optional</td><td>read/write</td><td>Specifies how to count ordinals for source parameter, from left-to-right or from right-to-left. Counting starts at 1.</td></tr>
+<tr><td><code>srcName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name for the query parameter, cookie or header setting.</td></tr>
+<tr><td><code>srcOrdinal</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the location of the unnamed query parameter or path segment, in the path of a URL, that you want the WebAccelerator system to match.</td></tr>
+<tr><td><code>srcType</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a value for the WebAccelerator system to embed in a URL, in place of the cached value.</td></tr>
+<tr><td><code>srcUrl</code></td><td>string</td><td>absolute</td><td>optional</td><td>read/write</td><td>Specifies whether the request URL is a relative URL or an absolute URL.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

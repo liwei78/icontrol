@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/security/antiFraud/profile/forensic</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/security/antiFraud/profile/forensic</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>alertPath</code></td><td>string</td><td>/nstats/</td><td>optional</td><td>read/write</td><td>Specifies the BIG-IP URL path for alerts from Forensics tool.</td></tr>
+<tr><td><code>clientDomains</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configures a list of client domains to be resolved by Forensics tool.</td></tr>
+<tr><td><code>cloudConfigPath</code></td><td>string</td><td>/forensicscloud/</td><td>optional</td><td>read/write</td><td>Specifies the BIG-IP URL path for requests from Forensics tool to cloud-service-pool.</td></tr>
+<tr><td><code>cloudForensicsMode</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the numeric value sent to cloud-service-pool to download Forensics tool.</td></tr>
+<tr><td><code>cloudRemediationMode</code></td><td>integer</td><td>1</td><td>optional</td><td>read/write</td><td>Specifies the numeric value sent to cloud-service-pool to download Forensics tool in remediation mode.</td></tr>
+<tr><td><code>continueElement</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the HTML element with continue option that replaces %SKIP_PART% in the entire html when enforce-policy is enforce.</td></tr>
+<tr><td><code>exeLocation</code></td><td>string</td><td>/files/forensics.exe</td><td>optional</td><td>read/write</td><td>Specifies the BIG-IP URL path to download Forensics tool that also replaces %EXE_LOCATION% in the entire html.</td></tr>
+<tr><td><code>html</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the HTML code the system sends to the user after successful login with option to download Forensics tool.</td></tr>
+<tr><td><code>selfPostLocation</code></td><td>string</td><td>/html/selfpost.html</td><td>optional</td><td>read/write</td><td>Specifies the BIG-IP URL path for self POST page opened by Forensics tool during scanning.</td></tr>
+<tr><td><code>skipElement</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the HTML element with skip option that replaces %SKIP_PART% in the entire html when enforce-policy is not enforce.</td></tr>
+<tr><td><code>skipPath</code></td><td>string</td><td>/skipforensics/</td><td>optional</td><td>read/write</td><td>Specifies the BIG-IP URL path for skip / continue option that also replaces %SKIP_PATH% in both continue-element and skip-element (before their replacement in the entire html).</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

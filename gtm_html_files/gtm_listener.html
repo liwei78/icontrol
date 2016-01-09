@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/gtm/listener</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/gtm/listener</h1>
+<p>Listeners accept DNS queries sent to a particular address.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/gtm/listener</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/gtm/listener/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>address</code></td><td>string</td><td> </td><td>required</td><td>read/write</td><td>Specifies the IP address on which the system listens. The system receives traffic sent to this IP address and processes it as needed.</td></tr>
+<tr><td><code>advertise</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies whether this listener's address is advertised to surrounding routers.</td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>autoLasthop</code></td><td>string</td><td>default</td><td>optional</td><td>read/write</td><td>Specifies whether to automatically map last hop for pools or not. The default is to use next level's default.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>disabled</code></td><td>boolean</td><td>true</td><td>optional</td><td>read/write</td><td>Note that when you disable a listener, the listener no longer accepts new connection requests. However, it allows current connections to finish processing before going to a down state.</td></tr>
+<tr><td><code>enabled</code></td><td>boolean</td><td>true</td><td>optional</td><td>read/write</td><td>Specifies the state of the listener. The default value is enabled. This brings the listener to a state where it will accept new connections.</td></tr>
+<tr><td><code>fallbackPersistence</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a fallback persistence profile for the listener to use when the default persistence profile is not available.</td></tr>
+<tr><td><code>ipProtocol</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the protocol on which this listener receives network traffic. The options are udp or tcp.</td></tr>
+<tr><td><code>lastHopPool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the last hop pool that you want the listener to use to direct reply traffic to the last hop router.</td></tr>
+<tr><td><code>mask</code></td><td>string</td><td>ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td><td>optional</td><td>read/write</td><td>Specifies the netmask for a network listener only. This setting is required for a network listener. The netmask clarifies whether the host bit is an actual zero or a wildcard representation.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Specifies the partition within which this object resides. F5 Networks recommends that you create listeners in partition Common.</td></tr>
+<tr><td><code>pool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a default pool to which you want the listener to automatically direct traffic.</td></tr>
+<tr><td><code>port</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the port on which the listener listens for connections.</td></tr>
+<tr><td><code>sourcePort</code></td><td>string</td><td>preserve</td><td>optional</td><td>read/write</td><td>Specifies whether the system preserves the source port of the connection. The default is preserve. Use of the preserve-strict setting should be restricted to UDP only under very special circumstances such as nPath or transparent (that is, no translation of any other L3/L4 field), where there is a 1:1 relationship between virtual IP addresses and node addresses, or when clustered multi-processing (CMP) is disabled. The change setting is useful for obfuscating internal network addresses.</td></tr>
+<tr><td><code>translateAddress</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables address translation for the listener. Turn address translation off for a listener if you want to use the listener to load balance connections to any address. This option is useful when the system is load balancing devices that have the same IP address.</td></tr>
+<tr><td><code>translatePort</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables port translation. Turn port translation off for a listener if you want to use the listener to load balance connections to any service.</td></tr>
+<tr><td><code>vlansDisabled</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Specifies that traffic will not be accepted by this listener on the VLANS specified in the vlans option.</td></tr>
+<tr><td><code>vlansEnabled</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Specifies that traffic will be accepted by this listener only on the VLANS specified in the vlans option.</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="gtm_listener_profiles.html">profiles</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="gtm_listener_persist.html">persist</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>rules</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The iRules you want run on this listener. iRules help automate the intercepting, processing, and routing of application traffic.</td></tr>
+<tr><td><code>vlans</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a list of VLANs on which traffic is either disabled or enabled, based on the vlans-disabled and vlans-enabled settings.</td></tr>
+<tr><td><code><a href="gtm_listener_sourceAddressTranslation.html">sourceAddressTranslation</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

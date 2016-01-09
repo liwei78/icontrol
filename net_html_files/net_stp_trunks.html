@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/stp/trunks</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/stp/trunks</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>externalPathCost</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>The relative cost of send network traffic through the trunk. The external path cost only applies to STP 0 (zero). See the help page for a detailed description.</td></tr>
+<tr><td><code>internalPathCost</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>The relative cost of send network traffic through the trunk. See the help page for a detailed description.</td></tr>
+<tr><td><code>priority</code></td><td>integer</td><td>128</td><td>optional</td><td>read/write</td><td>Specifies the trunk priority number. Each network trunk has an associated priority within each spanning tree instance. The relative values of the trunk priorities influence which trunks are chosen to carry network traffic. All other things being equal, trunks with numerically lower priority values are favored to carry traffic. Trunk priorities take values in the range 0-240 in steps of 16. The default trunk priority is 128, the middle of the valid range.</td></tr>
+<tr><td><code>type</code></td><td>string</td><td>interface</td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

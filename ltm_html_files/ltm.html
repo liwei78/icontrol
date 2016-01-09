@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm</h1>
+<p>Local Traffic Manager</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="ltm_algLogProfile.html">algLogProfile</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Defines the configuration for logging of ALG flows.</td></tr>
+<tr><td><code><a href="ltm_defaultNodeMonitor.html">defaultNodeMonitor</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configure the default-monitor rule</td></tr>
+<tr><td><code><a href="ltm_evictionPolicy.html">evictionPolicy</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Defines an eviction policy, used to select which flows to evict when approaching limits.</td></tr>
+<tr><td><code><a href="ltm_ifile.html">ifile</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>iFile Configuration</td></tr>
+<tr><td><code><a href="ltm_lsnLogProfile.html">lsnLogProfile</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Defines the configuration for logging of LSN flows.</td></tr>
+<tr><td><code><a href="ltm_lsnPool.html">lsnPool</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>LSNAT/CGNAT translation address configuration</td></tr>
+<tr><td><code><a href="ltm_nat.html">nat</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Network address translation configuration</td></tr>
+<tr><td><code><a href="ltm_node.html">node</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Node specific pool member configuration</td></tr>
+<tr><td><code><a href="ltm_policy.html">policy</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Centralized Policy Matching configuration</td></tr>
+<tr><td><code><a href="ltm_policyStrategy.html">policyStrategy</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Centralized Policy Matching rule selection strategy</td></tr>
+<tr><td><code><a href="ltm_pool.html">pool</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Load balancing pool configuration</td></tr>
+<tr><td><code><a href="ltm_rule.html">rule</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>iRules configuration</td></tr>
+<tr><td><code><a href="ltm_snat.html">snat</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Secure network address translation (SNAT) configuration</td></tr>
+<tr><td><code><a href="ltm_snatTranslation.html">snatTranslation</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>SNAT translation address configuration</td></tr>
+<tr><td><code><a href="ltm_snatpool.html">snatpool</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Collections of SNAT translation addresses</td></tr>
+<tr><td><code><a href="ltm_trafficClass.html">trafficClass</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Traffic Class Configuration</td></tr>
+<tr><td><code><a href="ltm_urlcatQuery.html">urlcatQuery</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Query url category</td></tr>
+<tr><td><code><a href="ltm_virtual.html">virtual</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server configuration</td></tr>
+<tr><td><code><a href="ltm_virtualAddress.html">virtualAddress</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Virtual server IP address configuration</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="ltm_auth.html">auth</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Virtual server authentication configuration</td></tr>
+<tr><td><code><a href="ltm_classification.html">classification</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Traffic Classification</td></tr>
+<tr><td><code><a href="ltm_clientssl.html">clientssl</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manages request sent to TMM for SSL specific operations such as deletion of cached items.</td></tr>
+<tr><td><code><a href="ltm_clientsslProxy.html">clientsslProxy</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manage SSL Forward Proxy cached certificates</td></tr>
+<tr><td><code><a href="ltm_dataGroup.html">dataGroup</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Data group configuration</td></tr>
+<tr><td><code><a href="ltm_dns.html">dns</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>DNS configuration</td></tr>
+<tr><td><code><a href="ltm_globalSettings.html">globalSettings</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Local Traffic Manager options</td></tr>
+<tr><td><code><a href="ltm_htmlRule.html">htmlRule</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Generalized HTML rule-based patcher</td></tr>
+<tr><td><code><a href="ltm_messageRouting.html">messageRouting</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Message routing framework configuration</td></tr>
+<tr><td><code><a href="ltm_monitor.html">monitor</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>LTM monitor templates</td></tr>
+<tr><td><code><a href="ltm_persistence.html">persistence</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Virtual server persistence configuration</td></tr>
+<tr><td><code><a href="ltm_profile.html">profile</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Virtual server profile configuration</td></tr>
+<tr><td><code><a href="ltm_tacdb.html">tacdb</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>TACDB configuration.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

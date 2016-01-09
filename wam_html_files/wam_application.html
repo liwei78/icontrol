@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/wam/application</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/wam/application</h1>
+<p>Defines web application that you want the WebAccelerator system to speed up.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/wam/application</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/wam/application/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>code</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the unique code of the web application that is used for troubleshooting or tuning.</td></tr>
+<tr><td><code>collectRoiStatistics</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>If enabled, WAM ROI statistics are collected.</td></tr>
+<tr><td><code>contentExpirationTime</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies cache content freshness for this application. All cache entries older then this time stamp are considered invalidated.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the description of the web application.</td></tr>
+<tr><td><code>hints</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>ibrAdaptiveLifetime</code></td><td>integer</td><td>864000</td><td>optional</td><td>read/write</td><td>Specifies the adaptive lifetime of Intelligent Browser Referencing, in seconds, that is used to override the max-age cache control directive.</td></tr>
+<tr><td><code>ibrDefaultLifetime</code></td><td>integer</td><td>15724800</td><td>optional</td><td>read/write</td><td>Specifies the lifetime of Intelligent Browser Referencing, in seconds, that is used to override the max-age cache control directive.</td></tr>
+<tr><td><code>ibrPrefix</code></td><td>string</td><td>;wa</td><td>optional</td><td>read/write</td><td>Specifies the prefix to use with Intelligent Browser Referencing system.</td></tr>
+<tr><td><code>infoHeader</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies whether the WebAccelerator system will insert custom informational header X-WA-Info in HTTP responses.</td></tr>
+<tr><td><code>multibox</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies that WebAccelerator multibox support is disabled, farm mode, or symmetric mode for this application.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Specifies the administrative partition associated with the application.</td></tr>
+<tr><td><code>perfMonitor</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies when enabled (selected), that the Performance Monitor is enabled.</td></tr>
+<tr><td><code>perfMonitorDataRetentionPeriod</code></td><td>integer</td><td>30</td><td>optional</td><td>read/write</td><td>Specifies the duration, in days, of performance data retention.</td></tr>
+<tr><td><code>policy</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the acceleration policy to which you want to assign the new web application.</td></tr>
+<tr><td><code>predefined</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>If enabled, specifies that this is system predefined application. This is read-only property.</td></tr>
+<tr><td><code>roiReportCollectStatistics</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the statistics that will be included the ROI statistics report.</td></tr>
+<tr><td><code>roiReportEmailAddresses</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the email-addresses to which ROI statistics report is to be sent.</td></tr>
+<tr><td><code>roiReportFrequency</code></td><td>string</td><td>every-month</td><td>optional</td><td>read/write</td><td>Specifies the frequency of ROI statistics report, either weekly or monthly.</td></tr>
+<tr><td><code>roiReportName</code></td><td>string</td><td>wam_roi_report</td><td>optional</td><td>read/write</td><td>Specifies the name of ROI statistics report.</td></tr>
+<tr><td><code>roiReportNextTime</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the next time when the ROI statistics report should be sent.</td></tr>
+<tr><td><code>roiReportSmtpConfig</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the smtp configuration that will be used to email the ROI statistics report.</td></tr>
+<tr><td><code>sendMetadata</code></td><td>string</td><td>always</td><td>optional</td><td>read/write</td><td>Specifies whether or not the WebAccelerator system will send ETags in the HTTP headers to the client.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="wam_application_hosts.html">hosts</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the domain name (host name) that might appear in HTTP requests for the web application.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

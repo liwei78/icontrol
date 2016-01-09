@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/wom/localEndpoint</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/wom/localEndpoint</h1>
+<p>Local endpoint configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/wom/localEndpoint</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/wom/localEndpoint/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>addresses</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a single IP address the system uses for the local endpoint.</td></tr>
+<tr><td><code>allowNat</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether the system accepts connections for traffic behind a NAT device.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>endpoint</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether the local endpoint is available for initiating and receiving optimized traffic.</td></tr>
+<tr><td><code>internalForwarding</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies whether the local endpoint is available for forwarding internal traffic.</td></tr>
+<tr><td><code>ipEncapMtu</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the maximum transfer unit for IP encapsulated traffic.</td></tr>
+<tr><td><code>ipEncapProfile</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of a profile with encapsulation settings.</td></tr>
+<tr><td><code>ipEncapType</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies the type of IP layer encapsulation performed on iSession traffic.</td></tr>
+<tr><td><code>noRoute</code></td><td>string</td><td>passthru</td><td>optional</td><td>read/write</td><td>Specifies what the system does with traffic for which there is no remote endpoint to complete the iSession connection.</td></tr>
+<tr><td><code>serverSsl</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the default server SSL profile the system uses for all encrypted outbound connections.</td></tr>
+<tr><td><code>snat</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies the IP address the system uses for incoming traffic as the source IP address of the TCP connection between the WAN Optimization Manager and the server.</td></tr>
+<tr><td><code>tunnelPort</code></td><td>integer</td><td>443</td><td>optional</td><td>read/write</td><td>Specifies the number of the port on the local endpoint that the WAN Optimization Manager uses for control connections.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

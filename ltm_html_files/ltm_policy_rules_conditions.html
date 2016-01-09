@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/policy/rules/conditions</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/policy/rules/conditions</h1>
+<p></p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/policy/rules/conditions</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/policy/rules/conditions/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>address</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>all</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches all.</td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>browserType</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>browserVersion</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>caseInsensitive</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The value matched on is case insensitive.</td></tr>
+<tr><td><code>caseSensitive</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The value matched on is case sensitive.</td></tr>
+<tr><td><code>cipher</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on a cipher used.</td></tr>
+<tr><td><code>cipherBits</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on bits in a cipher.</td></tr>
+<tr><td><code>clientSsl</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The condition matches on Client SSL connections.</td></tr>
+<tr><td><code>code</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a specific code.</td></tr>
+<tr><td><code>commonName</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>contains</code></td><td>boolean</td><td>equals</td><td>optional</td><td>read/write</td><td>The value matches if it contains a certain string.</td></tr>
+<tr><td><code>continent</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>countryCode</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>countryName</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>cpuUsage</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>deviceMake</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>deviceModel</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>domain</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on a domain.</td></tr>
+<tr><td><code>endsWith</code></td><td>boolean</td><td>equals</td><td>optional</td><td>read/write</td><td>The value matches if it ends with a certain string.</td></tr>
+<tr><td><code>equals</code></td><td>boolean</td><td>equals</td><td>optional</td><td>read/write</td><td>The value matches if it equals a certain value.</td></tr>
+<tr><td><code>expiry</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on an expiry.</td></tr>
+<tr><td><code>extension</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches an extension.</td></tr>
+<tr><td><code>external</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The value matched on is from the external side of a connection.</td></tr>
+<tr><td><code>geoip</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>greater</code></td><td>boolean</td><td>equals</td><td>optional</td><td>read/write</td><td>The value matches if it is greater than a given value.</td></tr>
+<tr><td><code>greaterOrEqual</code></td><td>boolean</td><td>equals</td><td>optional</td><td>read/write</td><td>The value matches if it is greater than or equal to a given value</td></tr>
+<tr><td><code>host</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a host.</td></tr>
+<tr><td><code>httpBasicAuth</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This condition matches on basic HTTP authorization.</td></tr>
+<tr><td><code>httpCookie</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This condition matches on an HTTP cookie.</td></tr>
+<tr><td><code>httpHeader</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This condition matches on an HTTP header.</td></tr>
+<tr><td><code>httpHost</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This condition matches on an HTTP host.</td></tr>
+<tr><td><code>httpMethod</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This condition matches on an http method.</td></tr>
+<tr><td><code>httpReferer</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This condition matches on and HTTP referer.</td></tr>
+<tr><td><code>httpSetCookie</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This condition matches on HTTP set cookie.</td></tr>
+<tr><td><code>httpStatus</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This condition matches on an HTTP connection status.</td></tr>
+<tr><td><code>httpUri</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This condition matches on an HTTP URI.</td></tr>
+<tr><td><code>httpUserAgent</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>httpVersion</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>This condition matches on an HTTP version.</td></tr>
+<tr><td><code>index</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>The specified index is used to match.</td></tr>
+<tr><td><code>internal</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The value matched on is from the internal side of a connection.</td></tr>
+<tr><td><code>isp</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>last_15secs</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>last_1min</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>last_5mins</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>less</code></td><td>boolean</td><td>equals</td><td>optional</td><td>read/write</td><td>The value matches if it is less than a given value.</td></tr>
+<tr><td><code>lessOrEqual</code></td><td>boolean</td><td>equals</td><td>optional</td><td>read/write</td><td>The value matches if it is less than or equal to a given value</td></tr>
+<tr><td><code>local</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The value matches on local connections.</td></tr>
+<tr><td><code>major</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a major.</td></tr>
+<tr><td><code>matches</code></td><td>boolean</td><td>equals</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>minor</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a minor.</td></tr>
+<tr><td><code>missing</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The value matches if a value is missing.</td></tr>
+<tr><td><code>mss</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on maximum segment size.</td></tr>
+<tr><td><code>tmName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Matches name.</td></tr>
+<tr><td><code>not</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The opposite of this condition matches.</td></tr>
+<tr><td><code>org</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>password</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on a password.</td></tr>
+<tr><td><code>path</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a URI path.</td></tr>
+<tr><td><code>pathSegment</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a path segment.</td></tr>
+<tr><td><code>port</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a port.</td></tr>
+<tr><td><code>present</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The value matches if an item is present.</td></tr>
+<tr><td><code>protocol</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on a specific protocol.</td></tr>
+<tr><td><code>queryParameter</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a query parameter.</td></tr>
+<tr><td><code>queryString</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a query string.</td></tr>
+<tr><td><code>regionCode</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>regionName</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>remote</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The value matches on remote conditions.</td></tr>
+<tr><td><code>request</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td>This policy will match on a request.</td></tr>
+<tr><td><code>response</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td>This policy will match on a response.</td></tr>
+<tr><td><code>routeDomain</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on a route domain.</td></tr>
+<tr><td><code>rtt</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on round trip time.</td></tr>
+<tr><td><code>scheme</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a scheme.</td></tr>
+<tr><td><code>serverName</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>sslCert</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>sslClientHello</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>sslExtension</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>sslServerHandshake</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>sslServerHello</code></td><td>boolean</td><td>request</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>startsWith</code></td><td>boolean</td><td>equals</td><td>optional</td><td>read/write</td><td>The value matches if it starts with a certain string.</td></tr>
+<tr><td><code>tcp</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>The condition matches on tcp connections.</td></tr>
+<tr><td><code>text</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on text.</td></tr>
+<tr><td><code>unnamedQueryParameter</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>userAgentToken</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>username</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on a username.</td></tr>
+<tr><td><code>value</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches a value.</td></tr>
+<tr><td><code>values</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The specified values will be matched on.</td></tr>
+<tr><td><code>version</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on a version.</td></tr>
+<tr><td><code>vlan</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on a VLAN</td></tr>
+<tr><td><code>vlanId</code></td><td>boolean</td><td>all</td><td>optional</td><td>read/write</td><td>Matches on a VLAN id.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

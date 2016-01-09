@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/bwc/policy/categories</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/bwc/policy/categories</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Description for the policy category.</td></tr>
+<tr><td><code>ipTos</code></td><td>string</td><td>255</td><td>optional</td><td>read/write</td><td>Specifies the Type of Service (ToS) level to use when outgoing packets cross threshold (Note: in such case, bwc just does only marking and not shaping).  The default value is pass-through.</td></tr>
+<tr><td><code>linkQos</code></td><td>string</td><td>255</td><td>optional</td><td>read/write</td><td>Specifies the Quality of Service (QoS) level to use when outgoing packets cross threshold (Note: in such case, bwc just does only marking and not shaping). . The default value is pass-through.</td></tr>
+<tr><td><code>maxCatRate</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Policy Category - Maximum rate for this category. This becomes marking threshold when marking is done instead of enforcement.</td></tr>
+<tr><td><code>maxCatRatePercentage</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Policy Category - Percentage of max-user-rate for this category. This becomes marking threshold when marking is done instead of enforcement.</td></tr>
+<tr><td><code>trafficPriorityMap</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Policy Priority Traffic group to use as enforcement during congestion along with category configured.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

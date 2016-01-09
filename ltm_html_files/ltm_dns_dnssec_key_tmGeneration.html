@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/dns/dnssec/key/tmGeneration</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/dns/dnssec/key/tmGeneration</h1>
+<p>DNSSEC key generation configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/dns/dnssec/key/tmGeneration</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/dns/dnssec/key/tmGeneration/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>creator</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Hostname of BIG-IP which created this DNSSEC key generation.</td></tr>
+<tr><td><code>expiration</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the date and time that the key expires.</td></tr>
+<tr><td><code>handle</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>handle used for interaction with key manager or HSM.</td></tr>
+<tr><td><code>keyTag</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>DNSSEC key tag generated from rdata of DNSKEY</td></tr>
+<tr><td><code>privateText</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>publicText</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Public key.</td></tr>
+<tr><td><code>rollover</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the date and time that the key rolls over to a new key.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

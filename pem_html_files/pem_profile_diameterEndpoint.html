@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/pem/profile/diameterEndpoint</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/pem/profile/diameterEndpoint</h1>
+<p>diameter-endpoint profile configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/pem/profile/diameterEndpoint</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/pem/profile/diameterEndpoint/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the object to inherit the settings from.</td></tr>
+<tr><td><code>destinationHost</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the destination host for diameter messages. This should be a FQDN.</td></tr>
+<tr><td><code>destinationRealm</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the destination realm for diameter messages. This should be a FQDN.</td></tr>
+<tr><td><code>msgMaxRetransmits</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the number of times an outgoing request message will be retransmitted before being dropped.</td></tr>
+<tr><td><code>msgRetransmitDelay</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the delay in milliseconds after which an unanswered request will be retransmitted.</td></tr>
+<tr><td><code>originHost</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the origin host for diameter messages. This should be a FQDN.</td></tr>
+<tr><td><code>originRealm</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the origin realm for diameter messages. This should be a FQDN.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which this profile resides.</td></tr>
+<tr><td><code>pemProtocolProfileGx</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies PEM protocol profile to be used when Gx is supported. PEM protocol profile defines mapping of Diameter Gx AVPs to subscriber ID and other PEM subscriber session attributes.</td></tr>
+<tr><td><code>productName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the string used in the product-name AVP in the capabilities exchange messages.</td></tr>
+<tr><td><code>supportedApps</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of the supported applications.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="pem_profile_diameterEndpoint_fatalGraceTime.html">fatalGraceTime</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

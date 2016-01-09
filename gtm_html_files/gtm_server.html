@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/gtm/server</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/gtm/server</h1>
+<p>GTM server configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/gtm/server</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/gtm/server/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>datacenter</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the data center to which the server belongs.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>disabled</code></td><td>boolean</td><td>true</td><td>optional</td><td>read/write</td><td>Disables the server.</td></tr>
+<tr><td><code>enabled</code></td><td>boolean</td><td>true</td><td>optional</td><td>read/write</td><td>Enables the server.</td></tr>
+<tr><td><code>exposeRouteDomains</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>Allow the GTM server to auto-discover LTM virtual servers from all route domains.</td></tr>
+<tr><td><code>iqAllowPath</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether this BIG-IP will be used to conduct a path probe before traffic will be delegated to it. The default value is enabled.</td></tr>
+<tr><td><code>iqAllowServiceCheck</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether this BIG-IP system is used to conduct a service check probe before traffic will be delegated to it. The default value is enabled.</td></tr>
+<tr><td><code>iqAllowSnmp</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether this BIG-IP system will be used to conduct an SNMP probe before traffic is delegated to it. The default value is enabled.</td></tr>
+<tr><td><code>limitCpuUsage</code></td><td>uint64</td><td> </td><td>optional</td><td>read/write</td><td>For a server configured as a generic host, specifies the percent of CPU usage, otherwise has no effect. If percent of CPU usage goes above the limit, the server is marked as unavailable.</td></tr>
+<tr><td><code>limitCpuUsageStatus</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables the limit-cpu-usage option for this server. Only used on a server configured as a generic host. The default value is disabled.</td></tr>
+<tr><td><code>limitMaxBps</code></td><td>uint64</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the maximum allowable data throughput rate, in bits per second, for this server. If the network traffic volume exceeds this limit, the system marks the server as unavailable.</td></tr>
+<tr><td><code>limitMaxBpsStatus</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables the limit-max-bps option for this server. The default value is disabled.</td></tr>
+<tr><td><code>limitMaxConnections</code></td><td>uint64</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the maximum number of concurrent connections, combined, for all of the virtual servers on this server. If the connections exceed this limit, the system marks the server as unavailable.</td></tr>
+<tr><td><code>limitMaxConnectionsStatus</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables the limit-max-connections option for this server. The default value is disabled.</td></tr>
+<tr><td><code>limitMaxPps</code></td><td>uint64</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the maximum allowable data transfer rate, in packets per second, for this server. If the network traffic volume exceeds this limit, the system marks the server as unavailable.</td></tr>
+<tr><td><code>limitMaxPpsStatus</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables the limit-max-pps option for this server. The default value is disabled.</td></tr>
+<tr><td><code>limitMemAvail</code></td><td>uint64</td><td> </td><td>optional</td><td>read/write</td><td>For a server configured as a generic host, specifies the available memory required by the virtual servers on the server. If available memory falls below this limit, the server is marked as unavailable.</td></tr>
+<tr><td><code>limitMemAvailStatus</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables the limit-mem-avail option for this server. Only used on a server configured as a generic host. The default value is disabled.</td></tr>
+<tr><td><code>linkDiscovery</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies whether the system auto-discovers the links for this server. The default value is disabled.</td></tr>
+<tr><td><code>monitor</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the health monitors that the system uses to determine whether this server is available for load balancing.</td></tr>
+<tr><td><code>proberPool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Optional prober pool used to monitor the server's virtual servers.</td></tr>
+<tr><td><code>product</code></td><td>string</td><td>single-bigip</td><td>optional</td><td>read/write</td><td>Specifies the server type. The server type determines the metrics that the system can collect from the server.</td></tr>
+<tr><td><code>virtualServerDiscovery</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies whether the system auto-discovers the virtual servers for this server. The default value is disabled.</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="gtm_server_virtualServers.html">virtualServers</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>GTM virtual server configuration</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="gtm_server_addresses.html">addresses</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>GTM server configuration</td></tr>
+<tr><td><code><a href="gtm_server_metadata.html">metadata</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined generic data for the server. It is a name and value pair.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

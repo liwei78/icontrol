@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/security/log/profile/application</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/security/log/profile/application</h1>
+<p></p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/security/log/profile/application</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/security/log/profile/application/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>facility</code></td><td>string</td><td>local0</td><td>optional</td><td>read/write</td><td>Specifies the facility category of the logged traffic in Application Security.</td></tr>
+<tr><td><code>guaranteeLogging</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Indicates whether to guarantee local logging in Application Security.</td></tr>
+<tr><td><code>guaranteeResponseLogging</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Indicates whether to guarantee local response logging in Application Security.</td></tr>
+<tr><td><code>localStorage</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables local storage in Application Security.</td></tr>
+<tr><td><code>logicOperation</code></td><td>string</td><td>or</td><td>optional</td><td>read/write</td><td>Specifies the logic operation on the associated filters in Application Security (namely whether requests must pass all filters or at least one).</td></tr>
+<tr><td><code>maximumEntryLength</code></td><td>string</td><td>2k</td><td>optional</td><td>read/write</td><td>Specifies the maximum entry length in Application Security. The default length is 1K for remote servers that support the UDP protocol and 2K for remote servers that support the TCP and TCP-RFC3195 protocols. You can change the default maximum entry length for remote servers that support the TCP protocol.</td></tr>
+<tr><td><code>maximumHeaderSize</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the maximum headers size in Application Security.</td></tr>
+<tr><td><code>maximumQuerySize</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the maximum query string size in Application Security.</td></tr>
+<tr><td><code>maximumRequestSize</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the maximum request size in Application Security.</td></tr>
+<tr><td><code>protocol</code></td><td>string</td><td>tcp</td><td>optional</td><td>read/write</td><td>Specifies the protocol supported by the remote server in Application Security.</td></tr>
+<tr><td><code>remoteStorage</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies a remote storage type in Application Security.</td></tr>
+<tr><td><code>reportAnomalies</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Indicates whether to report detected anomalies in Application Security.</td></tr>
+<tr><td><code>responseLogging</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies a response logging type in Application Security.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="security_log_profile_application_filter.html">filter</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="security_log_profile_application_servers.html">servers</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="security_log_profile_application_format.html">format</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/vlan/sflow</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/vlan/sflow</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>pollInterval</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the maximum interval in seconds between two pollings. To enable this setting, you must also set the poll-interval-global setting to no.</td></tr>
+<tr><td><code>pollIntervalGlobal</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether the global VLAN poll-interval setting overrides the object-level poll-interval setting. The default value is yes.</td></tr>
+<tr><td><code>samplingRate</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the ratio of packets observed to the samples generated. For example, a sampling rate of 2000 specifies that 1 sample will be randomly generated for every 2000 packets observed. To enable this setting, you must also set the sampling-rate-global setting to no.</td></tr>
+<tr><td><code>samplingRateGlobal</code></td><td>string</td><td>yes</td><td>optional</td><td>read/write</td><td>Specifies whether the global VLAN sampling-rate setting overrides the object-level sampling-rate setting. The default value is yes.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/crypto/csr</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/crypto/csr</h1>
+<p>Certificate Signing Request configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/crypto/csr</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/crypto/csr/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>challengePassword</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the PKCS#9 challenge-password to be associated with this CSR.</td></tr>
+<tr><td><code>city</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the x509 city to be associated with this CSR.</td></tr>
+<tr><td><code>commonName</code></td><td>string</td><td> </td><td>required</td><td>read</td><td>Specifies the x509 common name to be associated with this CSR.</td></tr>
+<tr><td><code>consumer</code></td><td>string</td><td>ltm</td><td>optional</td><td>read/write</td><td>Specifies the TMOS component which will be making use of this.</td></tr>
+<tr><td><code>country</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the 2 letter x509 country code to be associated with this CSR.</td></tr>
+<tr><td><code>emailAddress</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the email address to be associated with this CSR.</td></tr>
+<tr><td><code>key</code></td><td>string</td><td> </td><td>required</td><td>read</td><td>Specifies the key to use for certificate signing request generation.</td></tr>
+<tr><td><code>organization</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the x509 organization name to be associated with this CSR.</td></tr>
+<tr><td><code>ou</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the organizational unit to be associated with this CSR.</td></tr>
+<tr><td><code>state</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the x509 state to be associated with this CSR.</td></tr>
+<tr><td><code>subjectAlternativeName</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Specifies the standard X.509 extension as shown in RFC 2459 to be associated with this CSR.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

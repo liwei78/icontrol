@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/wom/serverDiscovery</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/wom/serverDiscovery</h1>
+<p>Configure dynamic discovery of servers that can be reached through the local endpoint</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/wom/serverDiscovery</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/wom/serverDiscovery/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>autoSave</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether the system automatically saves the subnets that it discovers that can be reached through the local endpoint.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>filterMode</code></td><td>string</td><td>exclude</td><td>optional</td><td>read/write</td><td>Specifies whether the specified subnets are excluded from or included in the discovery of advertised routes.</td></tr>
+<tr><td><code>idleTimeLimit</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the maximum length of time a route can be idle without being removed from discovery.</td></tr>
+<tr><td><code>ipTtlLimit</code></td><td>integer</td><td>5</td><td>optional</td><td>read/write</td><td>Specifies the number of network segments on which a packet is allowed to travel before the route is removed from discovery.</td></tr>
+<tr><td><code>maxServerCount</code></td><td>integer</td><td>50</td><td>optional</td><td>read/write</td><td>Specifies the highest number of servers the system discovers before it stops looking.</td></tr>
+<tr><td><code>minIdleTime</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the minimum length of time a route must be idle before being removed from discovery. The default value of 0 (zero) disables idle time tracking.</td></tr>
+<tr><td><code>minPrefixLengthIpv4</code></td><td>integer</td><td>32</td><td>optional</td><td>read/write</td><td>Specifies the minimum prefix length for route aggregation in IPV4 networks.</td></tr>
+<tr><td><code>minPrefixLengthIpv6</code></td><td>integer</td><td>128</td><td>optional</td><td>read/write</td><td>Specifies the minimum prefix length for route aggregation in IPV6 networks.</td></tr>
+<tr><td><code>mode</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Enables or disables the dynamic discovery of servers.</td></tr>
+<tr><td><code>rttThreshold</code></td><td>integer</td><td>10</td><td>optional</td><td>read/write</td><td>Specifies that the system does not add servers it discovers with a round trip time greater than this value, in milliseconds.</td></tr>
+<tr><td><code>subnetFilter</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the IP addresses of the subnets to include in or exclude from the discovery of advertised routes, depending on the setting selected for the filter-mode attribute.</td></tr>
+<tr><td><code>timeUnit</code></td><td>string</td><td>days</td><td>optional</td><td>read/write</td><td>Specifies the unit of measure (days, hours, or minutes) for the length of idle time specified using the attributes idle-time-limit and min-idle-time.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

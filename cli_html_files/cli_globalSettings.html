@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/cli/globalSettings</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/cli/globalSettings</h1>
+<p>Configuration of CLI options</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/cli/globalSettings</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/cli/globalSettings/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>audit</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the global audit option of the CLI.  The audited commands are stored in /var/log/audit.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>idleTimeout</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td>Set the idle timeout value for users in the tmsh command line interface.  Time is set in number of minutes or disabled.</td></tr>
+<tr><td><code>scfBackupNumber</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Use this option to configure the number of backup single configuration files that the system stores when you run load sys config file command in tmsh. Each time you issue the command, the system saves the single configuration file. For example, if you set the scf-backup-number option to 3, after you use the tmsh load sys config file command for the third time, you will see these three files on your system: /var/local/scf/backup.scf, /var/local/scf/backup-1.scf, and /var/local/scf/backup-2.scf. The newest file is /var/local/scf/backup.scf. By default, the system saves two backup single configuration files.</td></tr>
+<tr><td><code>service</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the format in which the CLI shell displays a service. The options are: --name - The CLI shell displays a service using a host name,  for example, 192.168.10.20:http. --number - The CLI shell displays a service using a numeric value, for example, 192.168.10.20:80, where 80 indicates http. The default value is name.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

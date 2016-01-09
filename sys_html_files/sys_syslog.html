@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/syslog</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/syslog</h1>
+<p>System logging configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/syslog</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/syslog/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>authPrivFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the lowest level of security/authorization messages to include in the log. The default value is notice.</td></tr>
+<tr><td><code>authPrivTo</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the highest level of security/authorization messages to include in the log. The default value is emerg.</td></tr>
+<tr><td><code>clusteredHostSlot</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>clusteredMessageSlot</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>consoleLog</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies whether or not to log messages of level emerg to the console.</td></tr>
+<tr><td><code>cronFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the lowest level of messages about time-based scheduling to include in the system log. The default value is warning.</td></tr>
+<tr><td><code>cronTo</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the highest level of messages about time-based scheduling to include in the system log. The default value is emerg.</td></tr>
+<tr><td><code>daemonFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the lowest level of messages about daemon performance to include in the system log. The default value is notice.</td></tr>
+<tr><td><code>daemonTo</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the highest level of messages about daemon performance to include in the system log. The default value is emerg.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>include</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Warning: Do not use this parameter without assistance from the F5 Technical Support team. The system does not validate the commands issued using the include parameter. If you use this parameter incorrectly, you put the functionality of the system at risk.</td></tr>
+<tr><td><code>isoDate</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Enables or disables the ISO date format for messages in the log files. The default value is disabled.</td></tr>
+<tr><td><code>kernFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the lowest level of kernel messages to include in the system log. The default value is notice.</td></tr>
+<tr><td><code>kernTo</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the highest level of kernel messages to include in the system log. The default value is emerg.</td></tr>
+<tr><td><code>local6From</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the lowest error level for messages from the local6 facility to include in the log. The default value is notice.</td></tr>
+<tr><td><code>local6To</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the highest error level for messages from the local6 facility to include in the log. The default value is emerg.</td></tr>
+<tr><td><code>mailFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the lowest level of maillog messages to include in the system log. The default value is notice.</td></tr>
+<tr><td><code>mailTo</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the highest level of maillog messages to include in the system log. The default value is emerg.</td></tr>
+<tr><td><code>messagesFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the lowest level of system messages to include in the system log. The default value is notice.</td></tr>
+<tr><td><code>messagesTo</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the highest level of system messages to include in the system log. The default value is warning.</td></tr>
+<tr><td><code>userLogFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the lowest level of user account messages to include in the system log. The default value is notice.</td></tr>
+<tr><td><code>userLogTo</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the highest level of user account messages to include in the system log. The default value is emerg.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="sys_syslog_remoteServers.html">remoteServers</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

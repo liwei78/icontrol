@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/snatTranslation</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/snatTranslation</h1>
+<p>SNAT translation address configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/snatTranslation</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/snatTranslation/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>address</code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>The translation IP address.</td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>arp</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Indicates whether or not the system responds to ARP requests or sends gratuitous ARPs. The default value is enabled.</td></tr>
+<tr><td><code>connectionLimit</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the number of connections a translation address must reach before it no longer initiates a connection. The default value of 0 disables this option.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>disabled</code></td><td>boolean</td><td>true</td><td>optional</td><td>read/write</td><td>Disables SNAT translation on the system.</td></tr>
+<tr><td><code>enabled</code></td><td>boolean</td><td>true</td><td>optional</td><td>read/write</td><td>Enables SNAT translation on the system. This is the default setting.</td></tr>
+<tr><td><code>inheritedTrafficGroup</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>ipIdleTimeout</code></td><td>string</td><td>-1</td><td>optional</td><td>read/write</td><td>Specifies the number of seconds that IP connections initiated using a SNAT address are allowed to remain idle before being automatically disconnected. The default value is indefinite.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the snat resides.</td></tr>
+<tr><td><code>tcpIdleTimeout</code></td><td>string</td><td>-1</td><td>optional</td><td>read/write</td><td>Specifies the number of seconds that TCP connections initiated using a SNAT address are allowed to remain idle before being automatically disconnected. The default value is indefinite.</td></tr>
+<tr><td><code>trafficGroup</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the traffic group of the SNAT. The default is inherited from the containing folder.</td></tr>
+<tr><td><code>udpIdleTimeout</code></td><td>string</td><td>-1</td><td>optional</td><td>read/write</td><td>Specifies the number of seconds that UDP connections initiated using a SNAT address are allowed to remain idle before being automatically disconnected. The default value is indefinite.</td></tr>
+<tr><td><code>unit</code></td><td>integer</td><td>1</td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

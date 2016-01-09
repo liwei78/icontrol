@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/dns/cache/transparent</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/dns/cache/transparent</h1>
+<p>DNS Cache without a resolver (responses from serverside cached).</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/dns/cache/transparent</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/dns/cache/transparent/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>answerDefaultZones</code></td><td>string</td><td>no</td><td>optional</td><td>read/write</td><td>Answer queries for default zones: localhost, reverse 127.0.0.1 and ::1, and AS112 zones. The default value is no.</td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>idx</code></td><td>uint64</td><td>0</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>localZones</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Zones and associated resource records for which the cache will provide Authoritative answers.</td></tr>
+<tr><td><code>msgCacheSize</code></td><td>integer</td><td>1048576</td><td>optional</td><td>read/write</td><td>Number of bytes allocated for the message cache. The default value is 1m</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>rrsetCacheSize</code></td><td>integer</td><td>10485760</td><td>optional</td><td>read/write</td><td>Number of bytes allocated for the resource record set cache. The default value is 10m.</td></tr>
+<tr><td><code>type</code></td><td>string</td><td>cache-resolver</td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="ltm_dns_cache_transparent_responsePolicyZones.html">responsePolicyZones</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Manage the set of Response Policy Zones used by this DNS Cache.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

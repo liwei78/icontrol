@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/security/firewall/userDomain/identityServer</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/security/firewall/userDomain/identityServer</h1>
+<p>Identity service for user and group validation</p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>ip</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>IP address to reach identity service for this domain</td></tr>
+<tr><td><code>login</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Login used to connect to identity service. This corresponds to username specified in Local DB on the Big-IP running the identity service.</td></tr>
+<tr><td><code>password</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Password used to connect to identity service. This corresponds to password specified in Local DB on the Big-IP running the identity service.</td></tr>
+<tr><td><code>port</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Port on which identity service for this domain is running on the server</td></tr>
+<tr><td><code>priority</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Priority is a mechanism to select one service when there are multiple services configured. It is not useful when only one service is configured.  When multiple services are configured, the one with the lowest priority is selected.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

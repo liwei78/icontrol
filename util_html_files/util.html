@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/util</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/util</h1>
+<p>Utility programs that can be run from within tmsh</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/util</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/util/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="util_bash.html">bash</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Run the bash shell</td></tr>
+<tr><td><code><a href="util_bigip_appliance_add.html">bigip_appliance_add</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="util_ccmode.html">ccmode</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Use Common Criteria mode settings.</td></tr>
+<tr><td><code><a href="util_diadb.html">diadb</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>View or delete Diameter persistence entries</td></tr>
+<tr><td><code><a href="util_dig.html">dig</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Interrogate DNS name servers</td></tr>
+<tr><td><code><a href="util_dnat.html">dnat</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Utility program to do forward/reverse mapping of addresses for DNAT</td></tr>
+<tr><td><code><a href="util_domainTool.html">domainTool</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manage Kerberos Host identities</td></tr>
+<tr><td><code><a href="util_finalizeCustomAmi.html">finalizeCustomAmi</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="util_fipsCardSync.html">fipsCardSync</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Synchronize FIPS hardware security modules of a redundant system</td></tr>
+<tr><td><code><a href="util_fipsUtil.html">fipsUtil</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Configures and maintains a FIPS security domain on a redundant system</td></tr>
+<tr><td><code><a href="util_gencert.html">gencert</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Allow a user to generate self-signed SSL keys</td></tr>
+<tr><td><code><a href="util_getCcnDossier.html">getCcnDossier</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Get dossier fields for CCN licensing</td></tr>
+<tr><td><code><a href="util_getDossier.html">getDossier</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display info about system dossier</td></tr>
+<tr><td><code><a href="util_imish.html">imish</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Shell to configure dynamic routing</td></tr>
+<tr><td><code><a href="util_lsndb.html">lsndb</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>View LSN persistence entries and inbound mappings</td></tr>
+<tr><td><code><a href="util_netstat.html">netstat</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display network connections, routing tables, interface statistics, masquerade connections, and multicast memberships</td></tr>
+<tr><td><code><a href="util_ping.html">ping</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Send ICMP echo requests to network hosts</td></tr>
+<tr><td><code><a href="util_ping6.html">ping6</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Send ICMPv6 echo requests to network hosts</td></tr>
+<tr><td><code><a href="util_platform_check.html">platform_check</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Platform diagnostics</td></tr>
+<tr><td><code><a href="util_qkview.html">qkview</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Gather diagnostic information from a BIG-IP system</td></tr>
+<tr><td><code><a href="util_racoonctl.html">racoonctl</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>racoon administrative control tool</td></tr>
+<tr><td><code><a href="util_scp.html">scp</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Secure copy over SSH</td></tr>
+<tr><td><code><a href="util_sftp.html">sftp</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Secure FTP</td></tr>
+<tr><td><code><a href="util_sipdb.html">sipdb</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>View SIP persistence entries</td></tr>
+<tr><td><code><a href="util_sshKeyswap.html">sshKeyswap</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manage SSH keys</td></tr>
+<tr><td><code><a href="util_ssldump.html">ssldump</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display SSL traffic on a network</td></tr>
+<tr><td><code><a href="util_sysIcheck.html">sysIcheck</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Find filesystem changes since install</td></tr>
+<tr><td><code><a href="util_tcpdump.html">tcpdump</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display network traffic</td></tr>
+<tr><td><code><a href="util_telnet.html">telnet</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>User interface to the TELNET protocol</td></tr>
+<tr><td><code><a href="util_testMonitor.html">testMonitor</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Tests a user created external monitor against a specified IP and port</td></tr>
+<tr><td><code><a href="util_tracepath.html">tracepath</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display the route packets take to a network host</td></tr>
+<tr><td><code><a href="util_tracepath6.html">tracepath6</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display the route packets take to an IPv6 network host</td></tr>
+<tr><td><code><a href="util_traceroute.html">traceroute</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display the route packets take to a network host</td></tr>
+<tr><td><code><a href="util_traceroute6.html">traceroute6</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display the route packets take to an IPv6 network host</td></tr>
+<tr><td><code><a href="util_unixLs.html">unixLs</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>List directory contents</td></tr>
+<tr><td><code><a href="util_unixMv.html">unixMv</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Move (rename) files</td></tr>
+<tr><td><code><a href="util_unixRm.html">unixRm</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Remove files or directories</td></tr>
+<tr><td><code><a href="util_updatecheck.html">updatecheck</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Make auto update query</td></tr>
+<tr><td><code><a href="util_vconsole.html">vconsole</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Telnet to vCMP guest's virtual serial port</td></tr>
+<tr><td><code><a href="util_zebos.html">zebos</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Enable, disable or check ZebOS</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

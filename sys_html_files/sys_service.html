@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/service</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/service</h1>
+<p>Controls the BIG-IP system services.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/service</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/service/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>add</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Specifies to add a service so that the service starts at boot time, or with the default service set.</td></tr>
+<tr><td><code>disable</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Specifies to manually disable the services. After you disable services, you must enable, and then start the services before the services run again.</td></tr>
+<tr><td><code>enable</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Specifies to enable the services. Please note that disabled services do not run until you enable, and then start the services again.</td></tr>
+<tr><td><code>force</code></td><td>boolean</td><td> </td><td>optional</td><td>read</td><td>Ends the services. Use this option as a last resort when services do not terminate automatically. Note that this option does not operate on the default set of services, you must specify the services that you want to end.</td></tr>
+<tr><td><code>memstat</code></td><td>boolean</td><td> </td><td>optional</td><td>read</td><td>Provides a status on the pre-set memory limit of the services and how much memory each service is currently using.</td></tr>
+<tr><td><code>reinit</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Specifies to reinitialize the services or re-read the config files for the services. You must specify the services that you want to reinitialize.</td></tr>
+<tr><td><code>remove</code></td><td>boolean</td><td> </td><td>optional</td><td>read/write</td><td>Specifies to remove a service so that the service does not start at boot time or with the default service set.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

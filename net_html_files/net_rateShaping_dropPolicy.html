@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/rateShaping/dropPolicy</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/rateShaping/dropPolicy</h1>
+<p>Drop policy configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net/rateShaping/dropPolicy</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/rateShaping/dropPolicy/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>averagePacketSize</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the average MTU (maximum transmission unit) size in the range of 0 to 10000 bytes. The default value is 0.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>fredMaxActive</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the maximum number of flows that can be active for each queue. The range is 0 to 10000. The default value is 0, which disables active flow limitation.</td></tr>
+<tr><td><code>fredMaxDrop</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the hard drop limit in the range of 0 to 400. The default value is 0. Setting this to a small value does not change the hard drop limit, but a higher number increases the limit.</td></tr>
+<tr><td><code>fredMinDrop</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the hard no drop limit in the range of 0 to 100. The default value is 0. Setting this to a large value prevents packets from being dropped.</td></tr>
+<tr><td><code>inverseWeight</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the weight used to calculate the average queue length. Valid values are 0, 64, 128, 256, 512, and 1024. The default value is 0.</td></tr>
+<tr><td><code>maxProbability</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the maximum percentage probability in the range of 0 to 100 according to which packets are dropped when the average queue length is between the minimum and maximum thresholds. The default value is 0.</td></tr>
+<tr><td><code>maxThreshold</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the queue length below which packets are not dropped. The default value is 0.</td></tr>
+<tr><td><code>minThreshold</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the queue length above which packets are not dropped. The default value is 0.</td></tr>
+<tr><td><code>redHardLimit</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the maximum queue size in kilobytes or megabytes. Additional packets are dropped. The default value is 0. This option applies only to the red type.</td></tr>
+<tr><td><code>type</code></td><td>string</td><td>tail</td><td>optional</td><td>read/write</td><td>Specifies the type of drop policy. The available settings are tail (drops the end of the traffic stream), red (randomly drops packets), and fred (drops packets according to the type of traffic in the flow). The default value is red. Although you could create a drop policy based on tail, that is already the default value for drop policy in both the shaping policy and rate class commands.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

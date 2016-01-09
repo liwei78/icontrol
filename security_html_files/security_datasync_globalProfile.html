@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/security/datasync/globalProfile</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/security/datasync/globalProfile</h1>
+<p>Datasync Global Profile which is synced across all devices.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/security/datasync/globalProfile</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/security/datasync/globalProfile/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>activationEpoch</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read</td><td>Specifies the epoch at which the profile becomes active, in UNIX-time.</td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>createTimestamp</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Displays the timestamp at which the profile was created, in UNIX-time.</td></tr>
+<tr><td><code>deactivationEpoch</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read/write</td><td>Specifies the epoch at which the profile becomes inactive, in UNIX-time.</td></tr>
+<tr><td><code>graceTime</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read/write</td><td>Specifies the grace time during which new buffers are supported, but not yet activated, in seconds.</td></tr>
+<tr><td><code>hashAlg</code></td><td>string</td><td>default</td><td>optional</td><td>read/write</td><td>Specifies the hashing algorithm to use.</td></tr>
+<tr><td><code>macAlg</code></td><td>string</td><td>default</td><td>optional</td><td>read/write</td><td>Specifies the MAC algorithm to use.</td></tr>
+<tr><td><code>masterKey</code></td><td>string</td><td>auto</td><td>optional</td><td>read/write</td><td>Specifies the secured master key upon which all cryptography is based. Use "auto" to generate a random key.</td></tr>
+<tr><td><code>maxRows</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read/write</td><td>Specifies the maximum number of rows to generate.</td></tr>
+<tr><td><code>minRows</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read/write</td><td>Specifies the minimum number of rows to generate before going online.</td></tr>
+<tr><td><code>modeOfOp</code></td><td>string</td><td>default</td><td>optional</td><td>read/write</td><td>Specifies the scrambling mode-of-operation to use.</td></tr>
+<tr><td><code>params</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies additional internal parameters.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which this profile resides.</td></tr>
+<tr><td><code>regenInterval</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read/write</td><td>Specifies the time interval at which regeneration will be done, in seconds.</td></tr>
+<tr><td><code>regenTimeOffset</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read/write</td><td>Specifies the time offset at which regeneration will be done, in seconds.</td></tr>
+<tr><td><code>rsaBits</code></td><td>string</td><td>2147483647</td><td>optional</td><td>read/write</td><td>Specifies the number of bits to use for RSA keys.</td></tr>
+<tr><td><code>rsaExp</code></td><td>string</td><td>default</td><td>optional</td><td>read/write</td><td>Specifies the RSA exponent.</td></tr>
+<tr><td><code>scrambleAlg</code></td><td>string</td><td>default</td><td>optional</td><td>read/write</td><td>Specifies the scrambling algorithm to use.</td></tr>
+<tr><td><code>table</code></td><td>string</td><td>error</td><td>required</td><td>read</td><td>Specifies the table to which the profile belongs.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

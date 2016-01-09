@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/messageRouting/diameter/route</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/messageRouting/diameter/route</h1>
+<p>Configures a static route for use in Diameter message routing.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/messageRouting/diameter/route</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/messageRouting/diameter/route/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>applicationId</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the identifier matching the application-id in the Diameter message. A value of 0 matches every application-id.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>destinationRealm</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the destination realm matching the Destination-Realm AVP value in the message. The blank default value routes all destination-realms.</td></tr>
+<tr><td><code>originRealm</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the origin realm matching the Origin-Realm AVP value in the message. The blank default value routes all origin-realms.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>peerSelectionMode</code></td><td>string</td><td>sequential</td><td>optional</td><td>read/write</td><td>Specifies how the system selects a peer to handle the Diameter traffic for this static route. The default is Sequential. Options are  1) Ratio: Peer selection is based on the ratio that is set for each peer that is in the Selected list.  2) Sequential: Peer selection is based on the order of the peers in the Selected list.</td></tr>
+<tr><td><code>virtualServer</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the virtual server from which the system receives client requests for this static route. If you do not select a virtual server, the system uses this static route to route Diameter messages originating from any client.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>peers</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specify which peers should handle the Diameter traffic for this static route from the list. The static route uses the peers in the order they are specified.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

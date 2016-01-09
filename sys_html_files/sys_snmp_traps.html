@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/snmp/traps</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/snmp/traps</h1>
+<p>Generic interface for configuring SNMP traps.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/snmp/traps</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/snmp/traps/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>authPassword</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The clear text password used to authenticate the user. This field will not be displayed.</td></tr>
+<tr><td><code>authPasswordEncrypted</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The encrypted password used to authenticate the user.</td></tr>
+<tr><td><code>authProtocol</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the protocol used to authenticate the user.</td></tr>
+<tr><td><code>community</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the community string used for this trap.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>engineId</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the authoritative security engine for SNMPv3.</td></tr>
+<tr><td><code>host</code></td><td>string</td><td> </td><td>required</td><td>read/write</td><td>The host the trap will be sent to.</td></tr>
+<tr><td><code>port</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>The port that the trap will be sent to.</td></tr>
+<tr><td><code>privacyPassword</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the clear text password used to encrypt traffic. This field will not be displayed.</td></tr>
+<tr><td><code>privacyPasswordEncrypted</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the encrypted password used to encrypt traffic.</td></tr>
+<tr><td><code>privacyProtocol</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the protocol used to encrypt traffic.</td></tr>
+<tr><td><code>securityLevel</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies whether or not traffic is encrypted and whether or not authentication is required.</td></tr>
+<tr><td><code>securityName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Security name used in conjunction with SNMPv3.</td></tr>
+<tr><td><code>version</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>SNMP version used for sending the trap.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

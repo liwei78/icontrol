@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/cm/trustDomain</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/cm/trustDomain</h1>
+<p>Trust domain configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/cm/trustDomain</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/cm/trustDomain/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>caCert</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The certificate authority device trust certificate.</td></tr>
+<tr><td><code>caCertBundle</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Bundle of CA certificates used to authenticate incoming connections.</td></tr>
+<tr><td><code>caDevices</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Set of certificate authority devices in the trust domain.</td></tr>
+<tr><td><code>caKey</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The certificate authority device trust key.  Only present for certificate authorities.</td></tr>
+<tr><td><code>guid</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>md5Fingerprint</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Option used to specify the ssl certificate fingerprint when verifying the identity of a new device.</td></tr>
+<tr><td><code>tmName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Option used to specify the name of a new device.</td></tr>
+<tr><td><code>nonCaDevices</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Set of subordinate devices in the trust domain.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Device administrative partition</td></tr>
+<tr><td><code>password</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Option used to specify the password when adding a new device.</td></tr>
+<tr><td><code>serial</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Option used to specify the ssl certificate serial number when verifying the identity of a new device.</td></tr>
+<tr><td><code>sha1Fingerprint</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Option used to specify the ssl certificate fingerprint when verifying the identity of a new device.</td></tr>
+<tr><td><code>signature</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Option used to specify the ssl certificate signature when verifying the identity of a new device.</td></tr>
+<tr><td><code>status</code></td><td>string</td><td>not-set</td><td>optional</td><td>read/write</td><td>Trust domain initialization status.</td></tr>
+<tr><td><code>trustGroup</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The device-group associated with the trust-domain.</td></tr>
+<tr><td><code>username</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Option used to specify the username when adding a new device.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

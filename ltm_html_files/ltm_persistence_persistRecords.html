@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/persistence/persistRecords</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/persistence/persistRecords</h1>
+<p>Displays or delete records in the persistence table.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/persistence/persistRecords</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/persistence/persistRecords/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, DELETE</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>clientAddr</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the client address for the persistence record.</td></tr>
+<tr><td><code>key</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the key to look up in the persist table. It is based on the persist mode.</td></tr>
+<tr><td><code>mode</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the type of persistence.</td></tr>
+<tr><td><code>nodeAddr</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the address of the node with which the client session remains persistent.</td></tr>
+<tr><td><code>nodePort</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the port of the node with which the client session remains persistent.</td></tr>
+<tr><td><code>pool</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the pool with which the client session remains persistent.</td></tr>
+<tr><td><code>virtual</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the virtual with which the client session remains persistent.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

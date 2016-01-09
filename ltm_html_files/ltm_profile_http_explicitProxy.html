@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/profile/http/explicitProxy</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/profile/http/explicitProxy</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>badRequestMessage</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the error message that will be returned to the browser when a proxy request can't be completed because the request was malformed.</td></tr>
+<tr><td><code>badResponseMessage</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the error message that will be returned to the browser when a proxy request can't be completed because the response was malformed.</td></tr>
+<tr><td><code>connectErrorMessage</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the error message that will be returned to the browser when a proxy request can't be completed because of a failure to establish the outbound connection.</td></tr>
+<tr><td><code>defaultConnectHandling</code></td><td>string</td><td>deny</td><td>optional</td><td>read/write</td><td>Specifies the behavior of the proxy service for CONNECT requests. If set to 'deny', CONNECT requests will only be honored if there is another virtual server listening for the requested outbound connection. If set to 'allow' outbound connections will be made regardless of other virtual servers.</td></tr>
+<tr><td><code>dnsErrorMessage</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the error message that will be returned to the browser when a proxy request can't be completed because of a failure to resolve the hostname in the request.</td></tr>
+<tr><td><code>dnsResolver</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the dns-resolver object that will be used to resolve hostnames in proxy requests.</td></tr>
+<tr><td><code>hostNames</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the which host names are to be treated as local. Proxy requests made for those hosts will be treated as regular HTTP requests and will be sent to the configured default pool.</td></tr>
+<tr><td><code>routeDomain</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the route-domain that will be used for outbound proxy requests.</td></tr>
+<tr><td><code>tunnelName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the tunnel that will be used for outbound proxy requests.  This enables other virtual servers to receive connections initiated by the proxy service.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

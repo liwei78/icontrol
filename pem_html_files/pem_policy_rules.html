@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/pem/policy/rules</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/pem/policy/rules</h1>
+<p>Adds, deletes, or replaces a set of the rules.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/pem/policy/rules</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/pem/policy/rules/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the application service that the object belongs to.</td></tr>
+<tr><td><code>dscpMarkingDownlink</code></td><td>string</td><td>64</td><td>optional</td><td>read/write</td><td>Specifies the action to modify the DSCP code in the downlink packets when the traffic flow matches the rule matching criteria. The range is 0 to 63, or pass-through. The default value is pass-through, indicating the DSCP code of the downlink packets will not be changed when the traffic flow matches the rule.</td></tr>
+<tr><td><code>dscpMarkingUplink</code></td><td>string</td><td>64</td><td>optional</td><td>read/write</td><td>Specifies the action to modify the DSCP code in the uplink packets when the traffic flow matches the rule matching criteria. The range is 0 to 63, or pass-through. The default value is pass-through, indicating the DSCP code of the uplink packets will not be changed when the traffic flow matches the rule.</td></tr>
+<tr><td><code>gateStatus</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies, when set to enabled, that the traffic can pass through the system without being changed. Set disabled to drop traffic that this rule applies to. The default is enabled.</td></tr>
+<tr><td><code>intercept</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the intercept endpoint name.</td></tr>
+<tr><td><code>irule</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the irules used for this pem rule.</td></tr>
+<tr><td><code>l2MarkingDownlink</code></td><td>string</td><td>8</td><td>optional</td><td>read/write</td><td>Sets Layer 2 Quality of Service level in the downlink packets for the traffic flow that matches a rule. Setting Layer 2 QoS level affects the packet delivery priority. The range is 0 to 7, or pass-through. The default value is pass-through, indicating the L2 QoS level of the packet will not be changed when the traffic flow matches the rule.</td></tr>
+<tr><td><code>l2MarkingUplink</code></td><td>string</td><td>8</td><td>optional</td><td>read/write</td><td>Sets Layer 2 Quality of Service level in the uplink packets for the traffic flow that matches a rule. Setting Layer 2 QoS level affects the packet delivery priority. The range is 0 to 7, or pass-through. The default value is pass-through, indicating the L2 QoS level of the packet will not be changed when the traffic flow matches the rule.</td></tr>
+<tr><td><code>precedence</code></td><td>integer</td><td> </td><td>required</td><td>read/write</td><td>Specifies the precedence for the rule in relation to the other rules. The range is 1 to 4294967295 where 1 has the highest precedence. A rule with high precedence is evaluated at a high priority. It is mandatory to specify precedence when creating a rule in a policy.</td></tr>
+<tr><td><code>qosRatePirDownlink</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the configured bandwidth control policy to apply to the downlink traffic when the traffic flow matches this rule.</td></tr>
+<tr><td><code>qosRatePirUplink</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the configured bandwidth control policy to apply to the uplink traffic when the traffic flow matches this rule.</td></tr>
+<tr><td><code>serviceChain</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the service chain endpoint name.</td></tr>
+<tr><td><code>tclFilter</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the tcl expression which uses iRule commands to filter the packet. It is a match if tcl-filter returns TRUE/1 or nomatch if FALSE/0. All configured filters (flow-info-filters, classification-filters, URL-categorization-filters and tcl-filter) must match before rule actions are applied.</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="pem_policy_rules_flowInfoFilters.html">flowInfoFilters</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the flow info filter.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="pem_policy_rules_classificationFilters.html">classificationFilters</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>PEM classification filter</td></tr>
+<tr><td><code><a href="pem_policy_rules_urlCategorizationFilters.html">urlCategorizationFilters</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>PEM URL categorization filter</td></tr>
+<tr><td><code><a href="pem_policy_rules_dtosTethering.html">dtosTethering</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="pem_policy_rules_forwarding.html">forwarding</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="pem_policy_rules_httpRedirect.html">httpRedirect</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="pem_policy_rules_insertContent.html">insertContent</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="pem_policy_rules_modifyHttpHdr.html">modifyHttpHdr</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="pem_policy_rules_qoeReporting.html">qoeReporting</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="pem_policy_rules_quota.html">quota</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="pem_policy_rules_reporting.html">reporting</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

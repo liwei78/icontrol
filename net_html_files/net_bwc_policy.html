@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/bwc/policy</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/bwc/policy</h1>
+<p>Bandwidth control policy for traffic flow.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net/bwc/policy</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/bwc/policy/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Description for the policy.</td></tr>
+<tr><td><code>dynamic</code></td><td>string</td><td>disabled</td><td>optional</td><td>read</td><td>Policy type: If dynamic enabled or disabled. Policy type change modification is a disallowed configuration.</td></tr>
+<tr><td><code>ipTos</code></td><td>string</td><td>255</td><td>optional</td><td>read/write</td><td>Specifies the Type of Service (ToS) level to use when outgoing packets cross threshold (Note: in such case, bwc just does only marking and not shaping). The default value is pass-through.</td></tr>
+<tr><td><code>linkQos</code></td><td>string</td><td>255</td><td>optional</td><td>read/write</td><td>Specifies the Quality of Service (QoS) level to use when outgoing packets cross threshold (Note: in such case, bwc just does only marking and not shaping). The default value is pass-through.</td></tr>
+<tr><td><code>logPeriod</code></td><td>integer</td><td>2048</td><td>optional</td><td>read/write</td><td>Specifies the frequency for bwc measurement to log to publisher.</td></tr>
+<tr><td><code>logPublisher</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the logging publisher. A new log-publisher object can be created via TMSH command tmsh create sys log-config publisher.</td></tr>
+<tr><td><code>maxRate</code></td><td>uint64</td><td>0</td><td>optional</td><td>read/write</td><td>Maximum rate for this policy class.</td></tr>
+<tr><td><code>maxUserRate</code></td><td>uint64</td><td>0</td><td>optional</td><td>read/write</td><td>Maximum per user rate for this policy class.</td></tr>
+<tr><td><code>maxUserRatePps</code></td><td>uint64</td><td>0</td><td>optional</td><td>read/write</td><td>Maximum user pps for this policy class.</td></tr>
+<tr><td><code>measure</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables/Disables bandwidth measurement for this policy. Available for only dynamic policies.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the bwc policy resides.</td></tr>
+<tr><td><code>trafficPriorityMap</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Policy Priority Traffic group to use as enforcement during congestion along with policy rate configured.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="net_bwc_policy_categories.html">categories</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

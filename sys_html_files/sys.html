@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys</h1>
+<p>General system configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="sys_autoscaleGroup.html">autoscaleGroup</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Autoscale group information for Amazon Web Services(AWS).</td></tr>
+<tr><td><code><a href="sys_classificationSignature.html">classificationSignature</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="sys_clock.html">clock</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Display the current date and time</td></tr>
+<tr><td><code><a href="sys_cluster.html">cluster</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Cluster configuration</td></tr>
+<tr><td><code><a href="sys_config.html">config</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Save and load system configuration files</td></tr>
+<tr><td><code><a href="sys_configDiff.html">configDiff</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>View the difference between two SCF files, or a file to running configuration</td></tr>
+<tr><td><code><a href="sys_connection.html">connection</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Displays or deletes active connections on the BIG-IP system</td></tr>
+<tr><td><code><a href="sys_console.html">console</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configure the serial console</td></tr>
+<tr><td><code><a href="sys_cpu.html">cpu</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>CPU statistics of system overall performance and on management hosts.</td></tr>
+<tr><td><code><a href="sys_daemonHa.html">daemonHa</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>System daemon HA configuration</td></tr>
+<tr><td><code><a href="sys_datastor.html">datastor</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Optimization data storage configuration</td></tr>
+<tr><td><code><a href="sys_db.html">db</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>General system properties</td></tr>
+<tr><td><code><a href="sys_dns.html">dns</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>DNS configuration</td></tr>
+<tr><td><code><a href="sys_failover.html">failover</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Redundant system failover state</td></tr>
+<tr><td><code><a href="sys_featureModule.html">featureModule</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Feature module configuration</td></tr>
+<tr><td><code><a href="sys_fixConnection.html">fixConnection</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>FIX connection level stats</td></tr>
+<tr><td><code><a href="sys_folder.html">folder</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Folder configuration</td></tr>
+<tr><td><code><a href="sys_geoip.html">geoip</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Load GeoIP data files</td></tr>
+<tr><td><code><a href="sys_globalSettings.html">globalSettings</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>General system settings</td></tr>
+<tr><td><code><a href="sys_haGroup.html">haGroup</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the ha group used to calculate the failover score.</td></tr>
+<tr><td><code><a href="sys_haMirror.html">haMirror</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Statistics for connection mirroring.</td></tr>
+<tr><td><code><a href="sys_haStatus.html">haStatus</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Displays the settings and status for high availability on a system.</td></tr>
+<tr><td><code><a href="sys_hardware.html">hardware</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>View hardware information</td></tr>
+<tr><td><code><a href="sys_hostInfo.html">hostInfo</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Host statistics, including system memory, CPU, and processor</td></tr>
+<tr><td><code><a href="sys_httpd.html">httpd</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>HTTPD configuration</td></tr>
+<tr><td><code><a href="sys_hypervisorInfo.html">hypervisorInfo</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Configuration settings proposed by the vCMP hypervisor. (vCMP guest only)</td></tr>
+<tr><td><code><a href="sys_icmpStat.html">icmpStat</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Standard ICMP statistics, including ICMPv4 packets and errors, and ICMPv6 packets and errors.</td></tr>
+<tr><td><code><a href="sys_icontrolSoap.html">icontrolSoap</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>iControl SOAP configuration</td></tr>
+<tr><td><code><a href="sys_ipAddress.html">ipAddress</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>View configured IP addresses</td></tr>
+<tr><td><code><a href="sys_ipStat.html">ipStat</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Standard IP statistics, including IPv4 and IPv6 packets, fragments, fragments reassembled, and errors.</td></tr>
+<tr><td><code><a href="sys_iprep.html">iprep</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="sys_iprepStatus.html">iprepStatus</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display the IP reputation database update status</td></tr>
+<tr><td><code><a href="sys_license.html">license</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manage the system license</td></tr>
+<tr><td><code><a href="sys_log.html">log</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>View system log files</td></tr>
+<tr><td><code><a href="sys_logRotate.html">logRotate</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Log rotation configuration</td></tr>
+<tr><td><code><a href="sys_ltcfgClass.html">ltcfgClass</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="sys_ltcfgInstance.html">ltcfgInstance</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="sys_macAddress.html">macAddress</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>View MAC addresses attached to the system</td></tr>
+<tr><td><code><a href="sys_managementDhcp.html">managementDhcp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>DHCP configuration for the management interface</td></tr>
+<tr><td><code><a href="sys_managementIp.html">managementIp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Management port address configuration</td></tr>
+<tr><td><code><a href="sys_managementOvsdb.html">managementOvsdb</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>OVSDB configuration</td></tr>
+<tr><td><code><a href="sys_managementRoute.html">managementRoute</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Route configuration for the management interface</td></tr>
+<tr><td><code><a href="sys_mcpState.html">mcpState</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Displays Master Control Program (mcp) state.</td></tr>
+<tr><td><code><a href="sys_memory.html">memory</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Memory statistics of system overall performance, on management hosts and traffic management modules, and on individual subsystem</td></tr>
+<tr><td><code><a href="sys_ntp.html">ntp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>NTP configuration</td></tr>
+<tr><td><code><a href="sys_outboundSmtp.html">outboundSmtp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Configuration for outbound email sent by the TMOS system</td></tr>
+<tr><td><code><a href="sys_pptpCallInfo.html">pptpCallInfo</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Displays or deletes active pptp-calls on the BIG-IP system</td></tr>
+<tr><td><code><a href="sys_procInfo.html">procInfo</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display process status</td></tr>
+<tr><td><code><a href="sys_provision.html">provision</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Module resource configuration</td></tr>
+<tr><td><code><a href="sys_pvaTraffic.html">pvaTraffic</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Packet Velocity Acceleration Engine's (PVA) traffic statistics.</td></tr>
+<tr><td><code><a href="sys_restrictedModule.html">restrictedModule</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code><a href="sys_scriptd.html">scriptd</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>scriptd daemon configuration</td></tr>
+<tr><td><code><a href="sys_service.html">service</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Controls the BIG-IP system services.</td></tr>
+<tr><td><code><a href="sys_smtpServer.html">smtpServer</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>SMTP configuration</td></tr>
+<tr><td><code><a href="sys_snmp.html">snmp</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>SNMP agent config</td></tr>
+<tr><td><code><a href="sys_sshd.html">sshd</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>SSHD configuration</td></tr>
+<tr><td><code><a href="sys_stateMirroring.html">stateMirroring</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Redundant system connection mirroring configuration</td></tr>
+<tr><td><code><a href="sys_syncSysFiles.html">syncSysFiles</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Sync System Files</td></tr>
+<tr><td><code><a href="sys_syslog.html">syslog</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>System logging configuration</td></tr>
+<tr><td><code><a href="sys_tmmInfo.html">tmmInfo</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Traffic management statistics, including process, memory, and CPU usage.</td></tr>
+<tr><td><code><a href="sys_tmmTraffic.html">tmmTraffic</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Traffic management statistics, including traffic information, error, and connections redirected.</td></tr>
+<tr><td><code><a href="sys_traffic.html">traffic</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Global traffic statistics</td></tr>
+<tr><td><code><a href="sys_ucs.html">ucs</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Save and restore configuration from UCS files</td></tr>
+<tr><td><code><a href="sys_version.html">version</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>View system version and hotfix information</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="sys_application.html">application</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Configure an application</td></tr>
+<tr><td><code><a href="sys_crypto.html">crypto</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manage cryptographic objects such as keys and certificates.</td></tr>
+<tr><td><code><a href="sys_daemonLogSettings.html">daemonLogSettings</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Daemon log configuration</td></tr>
+<tr><td><code><a href="sys_disk.html">disk</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manage disk configuration and utilization</td></tr>
+<tr><td><code><a href="sys_ecm.html">ecm</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Configures the Elastic Compute Manager(ECM)</td></tr>
+<tr><td><code><a href="sys_file.html">file</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>System files management</td></tr>
+<tr><td><code><a href="sys_fpga.html">fpga</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>FPGA(Field-Programmable Gate Array) firmware configuration</td></tr>
+<tr><td><code><a href="sys_icall.html">icall</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manage iCall configuration items</td></tr>
+<tr><td><code><a href="sys_ipfix.html">ipfix</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manages the common ipfix interface</td></tr>
+<tr><td><code><a href="sys_logConfig.html">logConfig</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manages the common logging interface</td></tr>
+<tr><td><code><a href="sys_performance.html">performance</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>System performance statistics</td></tr>
+<tr><td><code><a href="sys_raid.html">raid</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Manage disk arrays</td></tr>
+<tr><td><code><a href="sys_sflow.html">sflow</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>sFlow configuration</td></tr>
+<tr><td><code><a href="sys_software.html">software</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Software Installation and Volume Management</td></tr>
+<tr><td><code><a href="sys_urlDb.html">urlDb</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>URL Database Configuration and Category Management</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

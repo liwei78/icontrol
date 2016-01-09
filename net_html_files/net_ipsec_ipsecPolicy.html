@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/ipsec/ipsecPolicy</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/ipsec/ipsecPolicy</h1>
+<p>Configure IPsec security policy.</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net/ipsec/ipsecPolicy</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/ipsec/ipsecPolicy/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>ikePhase2AuthAlgorithm</code></td><td>string</td><td>aes-gcm128</td><td>optional</td><td>read/write</td><td>Specifies an payload authentication algorithm for ESP. This attribute is only valid when IKE is used to negotiate Security Associations. The possible options are: aes-gcm128, aes-gcm192, aes-gcm256, aes-gmac128, aes-gmac192, aes-gmac256, sha256, sha384, sha512 and sha1. The default value is aes-gcm128.</td></tr>
+<tr><td><code>ikePhase2EncryptAlgorithm</code></td><td>string</td><td>aes-gcm128</td><td>optional</td><td>read/write</td><td>Specifies an encryption algorithm for ESP. This attribute is only valid when IKE is used to negotiate security associations. The default value is B aes-gcm128 .</td></tr>
+<tr><td><code>ikePhase2Lifetime</code></td><td>integer</td><td>1440</td><td>optional</td><td>read/write</td><td>Specifies the lifetime duration in minutes, for the dynamically-negotiated security associations (SA). This attribute is only valid when IKE is used to negotiate security associations.</td></tr>
+<tr><td><code>ikePhase2LifetimeKilobytes</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the lifetime duration in kilobytes, for the dynamically-negotiated security associations (SA). This attribute is only valid when IKE is used to negotiate security associations. A value of '0' means the SA will not re-key based on the number of bytes encrypted/decrypted. The minimum recommended value is 1000 kilobytes. This value is not negotiated between peers.</td></tr>
+<tr><td><code>ikePhase2PerfectForwardSecrecy</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Defines the group of Diffie-Hellman exponentiations. This attribute is only valid when IKE is used to negotiate security associations. The value 'none' indicates that the PFS is disabled for phase2 SA negotiations.</td></tr>
+<tr><td><code>ipcomp</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies the compression algorithm for IPComp.</td></tr>
+<tr><td><code>mode</code></td><td>string</td><td>transport</td><td>optional</td><td>read/write</td><td>Specifies a security protocol mode for use. The options are: transport, tunnel, isession and interface.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>protocol</code></td><td>string</td><td>esp</td><td>optional</td><td>read/write</td><td>Specifies the IPsec protocol: Encapsulating Security Payload (ESP) or Authentication Header (AH).</td></tr>
+<tr><td><code>tunnelLocalAddress</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the IP address of the local IPsec tunnel endpoint. This option is only valid when mode is tunnel mode.</td></tr>
+<tr><td><code>tunnelRemoteAddress</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the IP address of the remote IPsec tunnel endpoint. This option is only valid when mode is tunnel mode.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/logConfig/filter</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/logConfig/filter</h1>
+<p>Selectively route logs to log publishers</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/logConfig/filter</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/logConfig/filter/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description</td></tr>
+<tr><td><code>level</code></td><td>string</td><td>debug</td><td>optional</td><td>read/write</td><td>Specify the lowest severity of messages to be filtered</td></tr>
+<tr><td><code>messageId</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specify the eight hexadecimal digit message id used to filter messages</td></tr>
+<tr><td><code>publisher</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specify the log publisher used to route messages</td></tr>
+<tr><td><code>source</code></td><td>string</td><td>all</td><td>optional</td><td>read/write</td><td>Specify the source of messages to be filtered</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

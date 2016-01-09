@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/tunnels/ipip</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/tunnels/ipip</h1>
+<p>IPIP tunnel profile configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net/tunnels/ipip</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/tunnels/ipip/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The profile from which to inherit settings. The default value is ipip.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>dsLite</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies whether the profile is used for a DS-lite deployment. When enabled, an augmented flow lookup is made using the IPv6 address in the outer header in addition to the inner header addresses for packets coming over this tunnel. The default value is disabled.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the admin-partition within which this component resides.</td></tr>
+<tr><td><code>proto</code></td><td>string</td><td>IPv4</td><td>optional</td><td>read/write</td><td>Specifies the protocol with which the profile is associated. The default value is 4, which specifies the IPIP protocol.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/analytics/applicationSecurity/scheduledReport</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/analytics/applicationSecurity/scheduledReport</h1>
+<p>Scheduled analytics report</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/analytics/applicationSecurity/scheduledReport</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/analytics/applicationSecurity/scheduledReport/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>emailAddresses</code></td><td>string</td><td> </td><td>required</td><td>read/write</td><td>A list of the email addresses of the recipients that receive the scheduled report.</td></tr>
+<tr><td><code>firstTime</code></td><td>string</td><td> </td><td>required</td><td>read/write</td><td>Defines which predefined report (AKA predefined filter) will be used to generate the report.</td></tr>
+<tr><td><code>frequency</code></td><td>string</td><td> </td><td>required</td><td>read/write</td><td>The scheduled report frequency.</td></tr>
+<tr><td><code>includeTotal</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Enables or disables including a summary (Overall result) entity in results.</td></tr>
+<tr><td><code>lastFailureTime</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>lastRunErrorMessage</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The last error message of the scheduled report in case of failure.</td></tr>
+<tr><td><code>lastRunStatus</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>The last run status of the scheduled report.</td></tr>
+<tr><td><code>lastSentTime</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>nextTime</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>predefinedReportName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Defines which predefined report (AKA predefined filter) will be used to generate the report.</td></tr>
+<tr><td><code>smtpConfig</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Defines which SMTP configuration will be used to send the scheduled report. If set to none, the scheduled report will be disabled.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="analytics_applicationSecurity_scheduledReport_multiLeveledReport.html">multiLeveledReport</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

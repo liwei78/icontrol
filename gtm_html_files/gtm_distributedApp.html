@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/gtm/distributedApp</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/gtm/distributedApp</h1>
+<p>Distributed application configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/gtm/distributedApp</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/gtm/distributedApp/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>dependencyLevel</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies the distributed application resources that must be in the available state before this distributed application is considered available.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Specifies the partition within which this object resides.</td></tr>
+<tr><td><code>persistCidrIpv4</code></td><td>integer</td><td>32</td><td>optional</td><td>read/write</td><td>Specifies a mask used to group IPv4 LDNS addresses. This feature allows one persistence record to be shared by LDNS addresses that match within this mask.</td></tr>
+<tr><td><code>persistCidrIpv6</code></td><td>integer</td><td>128</td><td>optional</td><td>read/write</td><td>Specifies a mask used to group IPv6 LDNS addresses. This feature allows one persistence record to be shared by LDNS addresses that match within this mask.</td></tr>
+<tr><td><code>persistence</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>When enabled, specifies that when a local DNS server makes repetitive requests on behalf of a client, the system reconnects the client to the same resource as previous requests.</td></tr>
+<tr><td><code>ttlPersistence</code></td><td>integer</td><td>3600</td><td>optional</td><td>read/write</td><td>Specifies, in seconds, the length of time for which the persistence entry is valid.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="gtm_distributedApp_disabledContexts.html">disabledContexts</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds context-disabled to a specified physical component, or deletes context-disabled from the component. When you add this option to a component, the system does not send application traffic to that component. To re-enable application traffic to the physical component, you delete the context-disabled option from the configuration of the component.</td></tr>
+<tr><td><code><a href="gtm_distributedApp_wideips.html">wideips</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

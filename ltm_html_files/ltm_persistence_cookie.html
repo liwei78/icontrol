@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/persistence/cookie</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/persistence/cookie</h1>
+<p>Virtual server Cookie persistence profile</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/persistence/cookie</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/persistence/cookie/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>alwaysSend</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the cookie persistence entry will be sent to the client on every response, rather than only on the first response.  The default value is disabled.</td></tr>
+<tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service to which the object belongs.</td></tr>
+<tr><td><code>cookieEncryption</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies the way in which cookie format will be used: "disabled": generate old format,unencrypted, "preferred": generate encrypted cookie but accept both encrypted and old format, and "required": cookie format must be encrypted. Default is required.</td></tr>
+<tr><td><code>cookieEncryptionPassphrase</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a passphrase to be used for cookie encryption.</td></tr>
+<tr><td><code>cookieName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies a unique name for the profile.</td></tr>
+<tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the existing profile from which the system imports settings for the new profile.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>expiration</code></td><td>string</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the cookie expiration date in the format d:h:m:s, h:m:s, m:s or seconds. Hours 0-23, minutes 0-59, seconds 0-59. The time period must be less than 24856 days. You can use "session-cookie" (0 seconds) to indicate that the cookie expires when the browser closes.</td></tr>
+<tr><td><code>hashLength</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the cookie hash length. The length is the number of bytes to use when calculating the hash value. The default value is 0 bytes.</td></tr>
+<tr><td><code>hashOffset</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Specifies the cookie hash offset. The offset is the number of bytes in the cookie to skip before calculating the hash value. The default value is 0 bytes.</td></tr>
+<tr><td><code>httponly</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether the httponly attribute should be enabled or disabled for the inserted cookies. The default value is enabled.</td></tr>
+<tr><td><code>matchAcrossPools</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the system can use any pool that contains this persistence record. The default value is disabled.</td></tr>
+<tr><td><code>matchAcrossServices</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that all persistent connections from a client IP address, which go to the same virtual IP address, also go to the same node. The default value is disabled.</td></tr>
+<tr><td><code>matchAcrossVirtuals</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that all persistent connections from the same client IP address go to the same node. The default value is disabled.</td></tr>
+<tr><td><code>method</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the type of cookie processing that the system uses. The default value is insert.</td></tr>
+<tr><td><code>mirror</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies whether the system mirrors persistence records to the high-availability peer. This option is applicable only when the value of the method option is hash. The default value is disabled.</td></tr>
+<tr><td><code>mode</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>overrideConnectionLimit</code></td><td>string</td><td>disabled</td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the pool member connection limits are not enforced for persisted clients. Per-virtual connection limits remain hard limits and are not disabled. The default value is disabled.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the profile resides.</td></tr>
+<tr><td><code>secure</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether the secure attribute should be enabled or disabled for the inserted cookies. The default value is enabled.</td></tr>
+<tr><td><code>timeout</code></td><td>string</td><td>180</td><td>optional</td><td>read/write</td><td>Specifies the duration of the persistence entries. The default value is 180 seconds.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

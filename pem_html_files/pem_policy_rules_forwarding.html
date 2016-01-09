@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/pem/policy/rules/forwarding</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/pem/policy/rules/forwarding</h1>
+<p></p>
+<p>This object has the following members.</p>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>endpoint</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the forwarding action's endpoint name.</td></tr>
+<tr><td><code>fallbackAction</code></td><td>string</td><td>drop</td><td>optional</td><td>read/write</td><td>Specifies whether the connection should continue unchanged or should be dropped in the event the forwarding action fails for any reason. The options are: drop or continue, and the default is drop.</td></tr>
+<tr><td><code>icapType</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Defines the ICAP adaptation type: request only adaptation, request and response adaptation or both types of adaptations combined.</td></tr>
+<tr><td><code>internalVirtual</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the internal virtual server field if the type chosen is icap.</td></tr>
+<tr><td><code>type</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td>Specifies the forwarding action type. The default value is None. It can take Route-To-Network if the traffic is to be forwarded to the network. If the service need to be forwarded to ICAP server it can set icap and if the forwarding is to a pool then choose pool.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

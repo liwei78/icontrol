@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/ltm/globalSettings/general</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/ltm/globalSettings/general</h1>
+<p>General configuration options</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/ltm/globalSettings/general</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/ltm/globalSettings/general/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>gratuitousArpRate</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies how fast gratuitous ARPs can be sent. If it is 0, then gratuitous ARPs are sent without pause. Otherwise, it specifies how many gratuitous ARPs can be sent every second. The default value is 0.</td></tr>
+<tr><td><code>l2CacheTimeout</code></td><td>integer</td><td> </td><td>optional</td><td>read/write</td><td>Specifies, in seconds, the amount of time that records remain in the Layer 2 forwarding table, when the MAC address of the record is no longer detected on the network. The default is 300 seconds.</td></tr>
+<tr><td><code>maintenanceMode</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies, when enabled, that the unit is in maintenance mode. In maintenance mode, the system stops accepting new connections and slowly finishes off existing connections.</td></tr>
+<tr><td><code>shareSingleMac</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the Media Access Control address (MAC address) that the system assigns to a VLAN. The value of unique indicates that a VLAN uses a mac address from a global mac address pool assigned to each hardware platform. The global value indicates that all of the VLANs on the system use the same MAC address.  The vmw-compat value indicates that the MAC address of a vlan is allocated in a manner compatible with VMware(tm) vSwitch and restricts VLANs to a single interface, with no trunks allowed.  Changing the value of this feature requires a manual restart of all daemons</td></tr>
+<tr><td><code>snatPacketForward</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Enables or disables SNAT packet forwarding. The default is disable.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

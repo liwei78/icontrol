@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/pem</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/pem</h1>
+<p>Policy Enforcement Manager</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/pem</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/pem/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="pem_forwardingEndpoint.html">forwardingEndpoint</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Defines PEM forwarding endpoint that is used to forward all the traffic to.</td></tr>
+<tr><td><code><a href="pem_interceptionEndpoint.html">interceptionEndpoint</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Defines PEM interception endpoint to clone all the traffic.</td></tr>
+<tr><td><code><a href="pem_irule.html">irule</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>pem iRules configuration</td></tr>
+<tr><td><code><a href="pem_listener.html">listener</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>PEM listener</td></tr>
+<tr><td><code><a href="pem_policy.html">policy</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>PEM policy</td></tr>
+<tr><td><code><a href="pem_serviceChainEndpoint.html">serviceChainEndpoint</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Defines PEM service chain endpoint.</td></tr>
+<tr><td><code><a href="pem_sessiondb.html">sessiondb</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Displays, deletes, modifies, or reset-stats a PEM subscriber session record on the BIG-IP system</td></tr>
+<tr><td><code><a href="pem_subscriber.html">subscriber</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Defines the static subscriber.</td></tr>
+<tr><td><code><a href="pem_subscriberAttribute.html">subscriberAttribute</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Defines the subscriber session attribute.</td></tr>
+<tr><td><code><a href="pem_subscribers.html">subscribers</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Loads PEM static subscribers file either from under folder /var/log/pem/subscribers, or under a specific folder given in the name of the file.</td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="pem_globalSettings.html">globalSettings</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>PEM options</td></tr>
+<tr><td><code><a href="pem_profile.html">profile</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>PEM profiles</td></tr>
+<tr><td><code><a href="pem_protocol.html">protocol</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>PEM protocols</td></tr>
+<tr><td><code><a href="pem_quotaMgmt.html">quotaMgmt</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>PEM Quota Management</td></tr>
+<tr><td><code><a href="pem_reporting.html">reporting</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>PEM Reporting</td></tr>
+<tr><td><code><a href="pem_stats.html">stats</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>PEM global statistics</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

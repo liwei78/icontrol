@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/pem/profile/spm</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/pem/profile/spm</h1>
+<p>SPM profile configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/pem/profile/spm</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/pem/profile/spm/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the name of the object to inherit the settings from.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>fastPem</code></td><td>string</td><td>enabled</td><td>optional</td><td>read/write</td><td>Specifies whether fast PEM optimization is enabled or not.</td></tr>
+<tr><td><code>fastVsName</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the virtual server which will be used in fast PEM optimization. The virtual server should have fastL4 profile attached.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which this profile resides.</td></tr>
+</tbody></table>
+<h2>Associated Arrays and Lists</h2>
+<table class="table table-bordered"><thead><tr><th>Property Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>globalPoliciesHighPrecedence</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of the policies which are applied to all subscriber traffic that is handled by the corresponding virtual. Those policies have higher priority than the policies assigned to individual subscribers.</td></tr>
+<tr><td><code>globalPoliciesLowPrecedence</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of the policies which are applied to all subscriber traffic that is handled by the corresponding virtual. Those policies have lower priority than the policies assigned to individual subscribers.</td></tr>
+<tr><td><code>unknownSubscriberPolicies</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces a set of the policies which are applied to the unknown subscriber traffic that is handled by the corresponding virtual. The unknown subscribers are defined as those that are in the non-provisioned state for any reason. This might include new subscribers waiting for the provisioning response from PCRF, or established subscribers that were not found neither in PCRF nor local subscriber registry.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

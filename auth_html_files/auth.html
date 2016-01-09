@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/auth</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/auth</h1>
+<p>User accounts and authentication</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/auth</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/auth/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="auth_apmAuth.html">apmAuth</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code><a href="auth_certLdap.html">certLdap</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>CERT-LDAP configuration for Single Sign On, a client certificate based authentication</td></tr>
+<tr><td><code><a href="auth_ldap.html">ldap</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>LDAP configuration for remote LDAP client authentication</td></tr>
+<tr><td><code><a href="auth_loginFailures.html">loginFailures</a></code></td><td>string</td><td> </td><td>optional</td><td>read</td><td>Display login failure statistics or reset a user who is locked out.</td></tr>
+<tr><td><code><a href="auth_tmPartition.html">tmPartition</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Administrative partition configuration. Administrative partitions provide role-based access control to configuration.</td></tr>
+<tr><td><code><a href="auth_password.html">password</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Change your password. Administrators and user managers may change the password of other users.</td></tr>
+<tr><td><code><a href="auth_passwordPolicy.html">passwordPolicy</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Password policy configuration</td></tr>
+<tr><td><code><a href="auth_radius.html">radius</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>RADIUS configuration for remote RADIUS client authentication</td></tr>
+<tr><td><code><a href="auth_radiusServer.html">radiusServer</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>RADIUS server configuration for use with RADIUS authentication profiles</td></tr>
+<tr><td><code><a href="auth_remoteRole.html">remoteRole</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Remote role configuration</td></tr>
+<tr><td><code><a href="auth_remoteUser.html">remoteUser</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Remote user configuration</td></tr>
+<tr><td><code><a href="auth_source.html">source</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Authentication configuration</td></tr>
+<tr><td><code><a href="auth_tacacs.html">tacacs</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>TACACS+ configuration for remote TACACS+ client authentication</td></tr>
+<tr><td><code><a href="auth_user.html">user</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Manage user accounts</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

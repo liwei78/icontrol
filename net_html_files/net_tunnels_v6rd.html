@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/net/tunnels/v6rd</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/net/tunnels/v6rd</h1>
+<p>6RD tunnel profile configuration</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/net/tunnels/v6rd</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/net/tunnels/v6rd/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>appService</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The application service that the object belongs to.</td></tr>
+<tr><td><code>defaultsFrom</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>The profile from which to inherit settings. The default value is v6rd.</td></tr>
+<tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>ipv4prefix</code></td><td>string</td><td>0.0.0.0</td><td>optional</td><td>read/write</td><td>As an extension not mentioned in the RFC5969, it specifies the IPv4 prefix for the Customer-Edge (CE) devices of a 6RD domain at a Border-Relay (BR) in case that the subnet prefixes used by the 6RD devices do not share the same IPv4 prefix. If they do, there is no need to configure this parameter. The default value is B 0.0.0.0 .</td></tr>
+<tr><td><code>ipv4prefixlen</code></td><td>integer</td><td>0</td><td>optional</td><td>read/write</td><td>Also noted as IPv4MaskLen in RFC5969, it specifies the number of identical high-order bits shared by all CE and BR IPv4 addresses in a given 6RD domain. The valid range is from zero to 32. It is a required value for create. It defaults to zero, i.e. the full ipv4 address must be encapsulated.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the admin-partition within which this component resides.</td></tr>
+<tr><td><code>v6rdprefix</code></td><td>string</td><td>::</td><td>optional</td><td>read/write</td><td>Specifies the IPv6 prefix for 6rd domain.</td></tr>
+<tr><td><code>v6rdprefixlen</code></td><td>integer</td><td>56</td><td>optional</td><td>read/write</td><td>Specifies the IPv6 prefix length of the 6rd domain. The default is 56.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>

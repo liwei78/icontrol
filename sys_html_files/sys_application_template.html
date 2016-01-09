@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link href="bootstrap.min.css" rel="stylesheet" media="screen" /><title>mgmt/tm/sys/application/template</title><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div class="container"><h1>mgmt/tm/sys/application/template</h1>
+<p>Application templates</p>
+<h2>REST Endpoints</h2>
+<dl class="dl-horizontal"><dt>Collection URI</dt><dd><code>/mgmt/tm/sys/application/template</code></dd><dt>Collection Methods</dt><dd><code>OPTIONS, GET</code></dd><dt>Resource URI</dt><dd><code>/mgmt/tm/sys/application/template/~[resource id]</code></dd><dt>Resource Methods</dt><dd><code>OPTIONS, GET, PUT, PATCH, DELETE, POST</code></dd><dt>Resource Natural Key</dt><dd><code> </code></dd></dl>
+<h2>Properties</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code>description</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>User defined description.</td></tr>
+<tr><td><code>ignoreVerification</code></td><td>string</td><td>false</td><td>optional</td><td>read/write</td><td>Set to true to temporarily stop the verification of signature or checksum. Signature or checksum is still retained.</td></tr>
+<tr><td><code>tmPartition</code></td><td>string</td><td>Common</td><td>optional</td><td>read/write</td><td>Displays the administrative partition within which the application template resides.</td></tr>
+<tr><td><code>prerequisiteErrors</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Displays a list of the errors with the prerequisites.  If blank, the template is valid.</td></tr>
+<tr><td><code>publicCert</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>requiresBigipVersionMax</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the maximum version of BIG-IP required by this template.</td></tr>
+<tr><td><code>requiresBigipVersionMin</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Specifies the minimum version of BIG-IP required by this template.</td></tr>
+<tr><td><code>requiresModules</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Adds, deletes, or replaces the list of modules that are required to be provisioned or enabled for this template to work.</td></tr>
+<tr><td><code>signingAction</code></td><td>string</td><td>none</td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>signingKey</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td></td></tr>
+<tr><td><code>tmplChecksum</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Computes a checksum for the script.</td></tr>
+<tr><td><code>tmplSignature</code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Sign the script using the specified private key and corresponding public certificate.</td></tr>
+<tr><td><code>totalSigningStatus</code></td><td>string</td><td>init</td><td>optional</td><td>read</td><td></td></tr>
+<tr><td><code>verificationStatus</code></td><td>string</td><td>none</td><td>optional</td><td>read</td><td></td></tr>
+</tbody></table>
+<h2>Subcollections</h2>
+<table class="table table-bordered"><thead><tr><th>Name</th><th>Type</th><th>Default Value</th><th>Required</th><th>Access</th><th>Description</th></tr></thead>
+<tbody><tr><td><code><a href="sys_application_template_actions.html">actions</a></code></td><td>string</td><td> </td><td>optional</td><td>read/write</td><td>Manage the set of actions associated with an application template.</td></tr>
+</tbody></table>
+Copyright © 2015 F5 Networks. All Rights Reserved.
+</div></body></html>
